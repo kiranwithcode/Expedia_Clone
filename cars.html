@@ -5,8 +5,248 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cars</title>
+    <script  src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/navbarStyles.css">
+    <link rel="stylesheet" href="./styles/index.css">
 </head>
+<style>
+    #sear1{
+        height: 50px;
+       width: 200px;
+       border-radius: 10px;
+       background-color: rgb(65, 65, 208);
+       color: white;
+       margin-left: 40%;
+       border: none;
+       font-size: 17px;  
+       margin-top: 20px; 
+    }
+    .input-out3{
+     height: 50px;
+       width: 258px;
+       border: 1px solid black;
+       padding-left: 50px;
+       border-radius: 10px;
+       margin-top: 30px; 
+       margin-left: 30px;
+       font-size: 13px;
+       color: black;
+   }
+   .input-out{
+       height: 50px;
+       width: 550px;
+       border: 1px solid black;
+       padding-left: 50px;
+       border-radius: 10px;
+       margin-top: 30px;
+       margin-left: 25px;
+       font-size: 17px;
+       color: black;
+   }
+   #p1{
+       display: flex;
+       margin-top: -30px;
+   }
+   #p1 > p{
+       margin-left: 30px;
+       margin-top: 50px;
+   }
+   #sel1{
+       margin-left: 600px;
+       border: none;
+       color: rgb(63, 63, 200);
+       font-weight: bold;
+       margin-top: 10px;
+   }
+   #sel2{
+       margin-left: 60px; 
+       border: none;
+       color: rgb(63, 63, 200);
+       font-weight: bold;
+       margin-top: 10px;
+   }
+   #p2{
+       display: flex;
+       margin-top: -20px;
+   }
+</style>
 <body>
-    <h1>This is Car's Page</h1>
+    <header id="header">
+
+    </header>
+    <div id="box">
+        <div id="box_navbar">
+            <button class="bttn"><a href="index.html" style="text-decoration: none; color: black;">Stays</a></button>&ensp; &ensp;&ensp;
+            <button class="bttn"><a href="flight.html" style="text-decoration: none; color: black;">Flights</a></button>&ensp; &ensp;&ensp;
+            <button class="bttn"><a href="cars.html" style="text-decoration: none; color: black;">Cars</a></button>&ensp; &ensp;&ensp;
+            <button class="bttn"><a href="package.html" style="text-decoration: none; color: black;">Packages</a></button>&ensp; &ensp;&ensp;
+            <button class="bttn"><a href="thingsToDo.html" style="text-decoration: none; color: black;">Things to do</a></button>
+        </div>
+        <hr style="width: 95%; margin: auto; border: 0.1px solid rgb(180, 177, 177); background-color: rgb(180, 177, 177);">
+        <div id="p1">
+            <p>Car hire</p>
+            <p>Air transport</p>
+        </div>
+        <div id="box1">
+        <div class="logo1">
+            <p class="logo-out"><i class="fa-solid fa-location-dot"></i></p>
+            <input type="text" placeholder="Pick-up" class="input-out"/>
+        </div>
+        <div class="logo1">
+            <p class="logo-out"><i class="fa-solid fa-location-dot"></i></p>
+            <input type="text" placeholder="Same as pick up" class="input-out"/>
+       </div>
+       </div>
+        <div id="p2">
+        <div class="logo1">
+        <p class="logo-out1"><i class="fa-solid fa-calendar-day"></i></p>
+        <input type="date" placeholder="check in" class="input-out3"/>
+        </div>
+        <div class="logo1">
+        <p class="logo-out1"><i class="fa-solid fa-calendar-day"></i></p>
+       <input type="date" placeholder="check out" class="input-out3"/>
+        </div>
+        <div class="logo1">
+        <p class="logo-out1"><i class="fa-solid fa-clock"></i></p>
+         <input type="time" placeholder="Pick-up time" class="input-out3"/>
+        </div>
+         <div class="logo1">
+         <p class="logo-out1"><i class="fa-solid fa-clock"></i></p>
+        <input type="time" placeholder="Drop-off time" class="input-out3"/>
+          </div>
+    </div>
+                <button id="sear1">Search</button>
+    </div> 
+              
+    </div>
+    <div id="box2">
+      <img id="first_img" src="https://a.travel-assets.com/travel-assets-manager/ux-887/Global-HP-Hero-928x398.jpg" alt="img">
+      <div class="heading">
+      <h2>Save Instantly with </br> expedia Rewards</h2>
+      <p id="par">you can enjoy access  to perks like Member Prices,</br>saving you 10% or more on select hotels. Terms</br>mat apply.</p>
+      <button id="member">See Member Prices</button>
+      </div>
+    </div>px
+
+   <div id="box3">
+       <img id="second_img" src="https://a.travel-assets.com/travel-assets-manager/gmvd-1482-bookearly-emea/667x320.jpg" alt="img">
+       <div id="heading2">
+           <p>Plan ahead and save</p>
+           <h3 style="margin-top: 10px; font-size: 17px;">Book 60 days in Advance for 20% off select stays.</h3>
+       </div>
+   </div>
+
+   <div id="box4">
+       <div><img id="third_img" src="https://a.travel-assets.com/mad-service/footer/bnaBanners/BEX_ROME_iStock_72dpi.jpg" alt="img"></div>
+       <div id="country_code">
+           <h1 >Members get more on the app</h1>
+           <p>Earn double Expedia Rewards points when you book on the app, plus get travel alerts</br> and manage your bookings on the go.</p>
+           <h3 style="margin-top: 30px; margin-bottom: 30px;">Text yourself a download link for easy access</h3>
+           <div>
+               <select id="countryCode">
+                   <option value="code">Country code</option>
+                   <option value="+93,Afghanistan">Afghanistan +93</option>
+                   <option value="+672,Antarctica">Antarctica +672</option>
+                   <option value="+54,Argentina">Argentina +54</option>
+                   <option value="+61,Australia">Australia +61</option>
+                   <option value="+43,Austria">Austria +43</option>
+                   <option value="+880,Bangladesh">Bangladesh +880</option>
+                   <option value="+32,Belgium">Belgium +32</option>
+                   <option value="+975,Bhutan">Bhutan +975</option>
+                   <option value="+55,Brazil">Brazil +55</option>
+                   <option value="+1,Canada">Canada +1</option>
+                   <option value="+86,China">China +86</option>
+                   <option value="+45,Denmark">Denmark +45</option>
+                   <option value="+20,Egypt">Egypt +20</option>
+                   <option value="+33,France">France +33</option>
+                   <option value="+49,Germany">Germany +49</option>
+                   <option value="+30,Greece">Greece +30</option>
+                   <option value="+299,Greenland">Greenland +299</option>
+                   <option value="+852,HongKong">Hong Kong SAR +852</option>
+                   <option value="+36,Hungary">Hungary +36</option>
+                   <option value="+354,Iceland">Iceland +354</option>
+                   <option selected="" value="+91,India">India +91</option>
+                   <option value="+62,Indonesia">Indonesia +62</option>
+                   <option value="+98,Iran">Iran +98</option>
+                   <option value="+964,Iraq">Iraq +964</option>
+                   <option value="+353,Ireland">Ireland +353</option>
+                   <option value="+972,Israel">Israel +972</option>
+                   <option value="+39,Italy">Italy +39</option>
+                   <option value="+1,Jamaica">Jamaica +1</option>
+                   <option value="+81,Japan">Japan +81</option>
+                   <option value="+60,Malaysia">Malaysia +60</option>
+                   <option value="+960,Maldives">Maldives +960</option>
+                   <option value="+230,Mauritius">Mauritius +230</option>
+                   <option value="+52,Mexico">Mexico +52</option>
+                   <option value="+977,Nepal">Nepal +977</option>
+                   <option value="+31,Netherlands">Netherlands +31</option>
+               </select>
+               <input type="text" placeholder="Phone Number" style="height: 50px;width: 150px;border-radius: 10px;" >
+               <button id="btn">Get the app</button>
+           </div>
+           <p style="margin-top: 20px; font-size: 12px;">By providing your number, you agree to receive a one-time automated text message with a link to get</br>the app. Standard text message rates may apply.
+           </p>
+       </div>
+       <div>
+           <img id="fifth_img" src="https://a.travel-assets.com/mad-service/qr-code/footer_qr_hp/27_QR_FOOTER_HP.png" alt="img">
+           <p style="font-size: 13px; padding-left: 10px;">Scan the QR code</p>
+       </div>
+   </div>
+   <div id="box5">
+       <div>
+           <p style="text-align: center; font-size: 13px;">Explore a world of travel with Expedia</p>
+           <p style="text-align: center;color: rgb(53, 53, 198); font-size: 13px;">Discover new places and experiences</p>
+       </div>
+   </br>
+   </br>
+       <div id="sub_box">
+           <div>
+               <img id="six_img" src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg" alt="img"/>
+
+           </div>
+           <div class="lower">
+               <p>Company</p></br>
+               <p><a href="https://www.expedia.co.in/lp/b/about" class="anc">About us</a></p></br>
+               <p><a href="https://lifeatexpediagroup.com/"class="anc">Jobs</a></p></br>
+               <p><a href="https://apps.expediapartnercentral.com/en_GB/list?utm_medium=referral&utm_source=wwwexpediacoin-en_GB&utm_campaign=SEO.B.google.com&utm_contentewd=footer-btn&siteId=27&tpid=27&eapid=0&langId=2057&utm_term=SEO.B.google.com&lasttouchMktgcode=SEO.B.google.com"class="anc">List your Property</a></p></br>
+               <p><a href="https://www.expediagroup.com/partner-with-us/default.aspx"class="anc">Properties</a></p></br></br>
+           </div>
+           <div class="lower">
+               <p>Explore</p></br>
+               <p><a href="https://www.expedia.co.in/India.dx80" class="anc">India travel guide</a></p></br>                    
+               <p><a href="https://www.expedia.co.in/Destinations-In-India.d80.Hotel-Destinations" class="anc">Hotels in India</a></p></br>
+               <p><a href="https://www.expedia.co.in/Destinations-In-India.d80.Holiday-Rental-Destinations" class="anc">Holiday rentals in India</a></p></br>
+               <p><a href="https://www.expedia.co.in/India.d80.Holidays-City-Breaks" class="anc">Holiday Packages in India</a></p></br>
+               <p><a href="https://www.expedia.co.in/Destinations-In-India.d80.Flight-Destinations"class="anc">Domestic flights</a></p></br>
+               <p><a href="https://www.expedia.co.in/Destinations-In-India.d80.Car-Hire-Destinations" class="anc">Car hire in India</a></p></br>
+               <p><a href="https://www.expedia.co.in/Accommodation"class="anc">All accommodation types</a></p></br>
+               <p><a href="https://travelblog.expedia.co.in/" class="anc">Travel blog</a></p></br>
+           </div>
+           <div class="lower">
+               <p>Terms and Policies</p></br>
+               <p><a href="https://www.expedia.co.in/lp/lg-privacypolicy" class="anc">Privacy Statement</a></p></br>
+               <p><a href="https://www.expedia.co.in/lp/lg-termsofuse" class="anc">terms of use</a></p></br>
+               <p><a href="https://www.vrbo.com/en-au/legal/traveller-terms-and-conditions" class="anc">Vrbo terms and conditions</a></p></br>
+           </div>
+           <div class="lower">
+               <p>Help</p></br>
+               <p><a href="https://www.expedia.co.in/service/"class="anc">Support</a></p></br>
+               <p><a href="https://www.expedia.co.in/service/#/articles/767/34/19798"class="anc">Change or cancel your booking</a></p></br>
+               <p><a href="https://www.expedia.co.in/service/#/articles/767/741/19795"class="anc">Refund process and timelines</a></p></br>
+               <p><a href="https://www.expedia.co.in/service/#/articles/767/34/25812"class="anc">Book a flight using an airline credit</a></p></br>
+               <p><a href="https://www.expedia.co.in/service/#/articles/767/52/19788"class="anc">International travel documents</a></p></br>
+           </div>
+       </div>
+       <hr style="width: 95%;">
+   </div>
+   <div id="box6">
+       <img src="https://images.trvl-media.com/media/content/expind/images/sg/secure.png" id="seventh_img"/>
+       <p style="font-size: 12px; text-align: center;margin-bottom: 40px;">© 2022 Expedia, Inc., an Expedia Group company / Expedia Asia Holdings Mauritius / BEX Travel Asia Pte. Ltd. All rights reserved. Expedia and the Airplane Logo are trademarks or registered trademarks of Expedia, Inc.</p>
+   </div>
 </body>
 </html>
+<script type = "module">  
+    import navbar from "./components/navbar.js";
+    let header = document.getElementById("header");
+    header.innerHTML = navbar();
+</script>
