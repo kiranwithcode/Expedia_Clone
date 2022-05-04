@@ -1,5 +1,5 @@
 #box{
-    height: 300px;
+    height: 350px;
     width: 80%;
     margin: auto;
     border: 1px solid rgb(180, 177, 177);
@@ -10,7 +10,7 @@
     height: 20%;
     justify-content: space-evenly;
     margin-right: 30%;
-    margin-left: 35%;  
+    margin-left: 30%;  
     /* padding-top: 5%;      */
 }
 .bttn{
@@ -21,8 +21,6 @@
     font-size: 15px;
     
 }
-
-
 #box2{
   height: 500px;
   width: 80%;
@@ -164,3 +162,93 @@
     margin-left: 45%;
     margin-top: -20px;
 }
+#box1{
+    display: flex;
+   }
+   
+   .logo1{
+       display: flex;
+   }
+   .input-out{
+       height: 50px;
+       width: 400px;
+       border: 1px solid black;
+       padding-left: 50px;
+       border-radius: 10px;
+       margin-top: 30px;
+       margin-left: 30px;
+       font-size: 17px;
+       color: black;
+   }
+   .logo-out{
+       position: absolute;
+       margin-top: 45px;
+       padding-left: 50px;
+       font-size: 20px;
+   }
+   .input-out1{
+     height: 50px;
+       width: 170px;
+       border: 1px solid black;
+       padding-left: 50px;
+       border-radius: 10px;
+       margin-top: 30px;
+       margin-left: 30px;
+       font-size: 13px;
+       color: black;
+
+   }
+   .logo-out1{
+     position: absolute;
+       margin-top: 45px;
+       padding-left: 50px;
+       font-size: 20px;
+
+   }
+   .input-out2{
+     height: 50px;
+       width: 250px;
+       border: 1px solid black;
+       padding-left: 50px;
+       border-radius: 10px;
+       margin-top: 30px;
+       margin-left: 30px;
+       font-size: 13px;
+       color: black;
+
+   }
+   .logo-out2{
+     position: absolute;
+       margin-top: 45px;
+       padding-left: 50px;
+       font-size: 20px;
+   }
+   #checkbox{
+       display: flex;
+       margin-top: 25px;
+       margin-left: 30px;
+   }
+   #car{
+       margin-left: 80px;
+       height: 18px;
+       width: 18px;
+       /* border: 2px solid grey; */
+       /* margin-top: -5px; */
+   }
+   #flight{
+       /* margin-left: 35px; */
+       height: 18px;
+       width: 18px;
+       /* border: 2px solid grey; */
+   }
+   #search1{
+       height: 50px;
+       width: 200px;
+       /* margin: auto; */
+       border-radius: 10px;
+       background-color: rgb(65, 65, 208);
+       color: white;
+       margin-left: 40%;
+       border: none;
+       font-size: 17px;
+   }

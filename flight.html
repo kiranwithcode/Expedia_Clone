@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Package</title>
+    <title>Filght</title>
     <script  src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/navbarStyles.css">
     <link rel="stylesheet" href="./styles/index.css">
@@ -53,11 +53,11 @@
        margin-top: 20px;
    }
    #sel1{
-       margin-left: 1000px;
+       margin-left: 600px;
        border: none;
        color: rgb(63, 63, 200);
-       /* font-weight: bold; */
-       margin-top: 20px;
+       font-weight: bold;
+       margin-top: 10px;
    }
    #sel2{
        margin-left: 60px; 
@@ -65,11 +65,6 @@
        color: rgb(63, 63, 200);
        font-weight: bold;
        margin-top: 10px;
-   }
-   #chck1{
-       margin-top: 20px;
-       margin-left: 25px;
-       font-weight: lighter;
    }
 </style>
 <body>
@@ -86,8 +81,15 @@
         </div>
         <hr style="width: 95%; margin: auto; border: 0.1px solid rgb(180, 177, 177); background-color: rgb(180, 177, 177);">
         <div id="p1">
+            <p>Return</p>
+            <p>One-way</p>
+            <p>Multi-city</p>
             <select id="sel1">
-                <option value=" 1 room,2 travellers">1 room,2 travellers</option>
+                <option value="1 traveller">1 traveller</option>
+            </select>
+            <select id="sel2">
+                <option value="Economy">Economy</option>
+                <option value="premium economy">Frist class</option>
             </select>
         </div>
         <div id="box1">
@@ -107,10 +109,6 @@
         <p class="logo-out1"><i class="fa-solid fa-calendar-day"></i></p>
         <input type="date" placeholder="check out" class="input-out3"/>
        </div>
-       </div>
-       <div id="chck1">
-           <input type="checkbox" id="chck" name="chck">
-           <label for="chck">I only need accommodation for part of my trip </label>
        </div>
        
        <button id="sear">Search</button>
