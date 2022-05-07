@@ -394,12 +394,6 @@ display(hotelData);
 
 
 
-
-
-
-
-
-
 //sort by price using checkbox
 function sortByPrice()
 {
