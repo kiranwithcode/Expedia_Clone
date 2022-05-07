@@ -276,6 +276,40 @@ display(hotelData);
 
 //implementation of search
 //display(hotelData);
+// function search()
+// {
+//   //console.log("inside Search");
+// let destination = document.getElementById("search").value;
+// let inDate = document.getElementById("inDate").value;
+// let outDate = document.getElementById("outDate").value;
+// let room = document.getElementById("room").value;
+// let person = document.getElementById("person").value;
+// console.log(destination,inDate,outDate,room,person);
+// if(destination&&inDate&&outDate&&room&&person)
+// {
+//   let hotelData= JSON.parse(localStorage.getItem("hotel"))||[];
+//   let searchArray=[];
+//   let x = destination.toLowerCase();
+//  hotelData.map(function(el){
+//    if(el.city==x)
+//    {
+//      searchArray.push(el);
+//    }
+//  });
+//  ////console.log(searchArray)
+//  hotelData=[];
+//  display(searchArray);
+// }
+// else
+// {
+//   alert("please fill all the details");
+// }
+// }
+// display(hotelData);
+
+
+//implementation of search
+//display(hotelData);
 function search()
 {
   //console.log("inside Search");
@@ -382,8 +416,6 @@ else
 }
 }
 display(hotelData);
-
-
 
 
 
