@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Payment Gateway</title>
+     <style>
+           #t1Container
+          {
+               display: flex;
+               /* justify-content: space-between; */
+               border-top: 1px solid gray;
+               border-bottom: 1px solid gray;
+               padding-bottom: 10px;
+               
+          }
+          #t1img
+          {
+               height: 27px;
+               margin-top: 10px;
+               margin-left: 70px;
+          }
+          #signupLogo
+          {
+               line-height: 0px;
+               /* border: 2px solid red; */
+               margin-left: 55%;
+          }
+          h3
+          {
+              
+               padding-bottom: 10px;
+               border-radius: 10px;
+               padding-left: 70px;
+               color: #333333;
+          }
+
+/* here is the css of form style */
+          form
+          {
+               width: 90%;
+               margin: auto;
+          }
+          input
+          {
+               width: 100%;
+               height: 40px;
+               border-top: none;
+               border-left: none;
+               border-right: none;
+               
+          }
+
+/* To Remove the border boxes in input tag when we are typing */
+          input:focus, textarea:focus, select:focus{
+                outline: none;
+                }
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                 margin: 0;
+               }
+
+
+
+          h4
+          {
+               font-size: 20px;
+               margin-bottom: 2px;
+          }
+
+          
+          
+/* here is the end of  css of form style */
+         
+          #parentContainer
+          {
+               width: 90%;
+               margin: auto;
+               /* border: 5px solid red; */
+               /* height: 500px; */
+               display: flex;
+          }
+          #leftContainer
+          {
+               height: 500px;
+               width: 65%;
+               border: 1px solid gray;
+               display: flex;
+
+
+          }
+          #left1
+          {
+               width: 40%;
+               height: 500px;
+               /* border: 5px solid black; */
+          }
+          .left1Child
+          {
+               display: flex;
+               height: 70px;
+               width: 95%;
+               margin: auto;
+               background-color: whitesmoke;
+               /* border: 5px solid pink; */
+          }
+          .left1Child:hover
+          {
+               cursor: pointer;
+               opacity: 0.5;
+               
+          }
+
+
+
+
+
+
+
+
+
+          .cardDetails
+          {
+               font-size: 14px;
+               line-height: 21px;
+               color: #0f0f0f;
+               font-weight: 600;
+               margin-left: -70px;
+               padding-top: 8px;
+          }
+          /* #left2
+          {
+               background-color: greenyellow;
+          } */
+          #formImg,#parentCheckBox,#cardD
+          {
+               display: flex;
+          }
+          .fImg
+          {
+               height: 15px;
+               width: 30px;
+               padding: 15px 25px;
+          }
+          .left1Img
+          {
+               height: 30px;
+               width: 30px;
+               padding: 15px 15px;
+          }
+          #checkbox
+          {
+               height: 20px;
+               width: 20px;
+               margin-top: 20px;
+               margin-right: 10px;
+          }
+          
+         #ccv
+          {
+               /* padding-left: 10px; */
+               margin-left: 30px;
+          }
+          #expiry
+          {
+               padding-right: 40px;
+          }
+          #rightContainer
+          {
+              border-right: none;
+               border-left: 1px solid gray;
+               border-top: none;
+               border-right: none;
+               margin-top: -40px;
+               padding-left: 30px;
+               
+          }
+          
+         #rightContainer1
+         {
+              padding-left: 30px;
+              /* border: 5px solid greenyellow; */
+         }
+         .name
+         {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+         }
+         .left1Child1
+         {
+              background-color:white;
+              opacity: stop;
+         }
+         .left1Child1:hover
+          {
+               cursor: pointer;
+               opacity: 1;
+               
+          }
+          #itemName
+          {
+               /* background-color: blue; */
+               width: 250px;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+          }
+     </style>
+</head>
+<body>
+     <!-- this is the implementation of NavBaar section -->
+     <div id="t1Container">
+          <div>
+               <!-- src="D:\Unit2D-Proj\img\H1.png" --><a href="./index.html">
+
+                    <img id="t1img" src="img\logo.svg" alt="TopHeading Img">
+               </a>
+          </div>
+          <div id="signupLogo">
+               <p style="color: #bdd4e5; font-size: 13px;font-weight: 300;"> Signed as</p>
+               <h4 style="font-weight: 400; font-size: 15px;">BookMyTrip@gmail.com</h4>
+          </div>
+     </div>
+
+     <h3>Choose your payment method</h3>
+     <Div id="parentContainer">
+          <div id="leftContainer">
+
+
+               <div id="left1">
+                    <Div class="left1Child left1Child1">
+                         <img class="left1Img" src="https://images.bewakoof.com/web/bank-card-fill-1645697857.svg" alt="cardimg1">
+                         <h3 class="cardDetails">Debit/Credit Card</h3>
+                    </Div>
+
+                    <div class="left1Child">
+                         <img class="left1Img" src="https://images.bewakoof.com/web/Group-1645705428.png" alt="cardimg2">
+                         <h3 class="cardDetails">Wallet</h3>
+                    </div>
+
+                    <div class="left1Child">
+                         <img class="left1Img" src="https://images.bewakoof.com/web/upi-icon-1645705429.png" alt="cardimg3">
+                         <h3 class="cardDetails">UPI</h3>
+                    </div>
+
+                    <div class="left1Child">
+                         <img class="left1Img" src="https://images.bewakoof.com/web/nb-icon-1645705428.png" alt="cardimg4">
+                         <h3 class="cardDetails">Net banking</h3>
+                    </div>
+
+                    <div class="left1Child">
+                         <img class="left1Img" src="https://images.bewakoof.com/web/cod-icon-1645705427.png" alt="cardimg5">
+                         <h3 class="cardDetails">Cash </h3>
+                    </div>
+                    <div class="left1Child"></div>
+                    
+
+               </div>
+
+               <div id="left2">
+
+                    <div id="formImg">
+                         <img class="fImg fImg1" src="https://images.bewakoof.com/web/ic-visa-gray-payment-v1.jpg" alt="Form img1">
+                         <img class="fImg" src="https://images.bewakoof.com/web/ic-master-card-payment-v1.jpg" alt="Form img2">
+                         <img class="fImg" src="https://images.bewakoof.com/web/ic-rupay-payment-v1.jpg" alt="Form img3">
+                         <img class="fImg" src="https://images.bewakoof.com/web/ic-american-express-payment-v1.jpg" alt="Form img4">
+                    </div>
+                    
+                    <form>
+                         
+                         <input type="number" id="cardNum" placeholder="Card Number">
+                         <div id="cardD">
+                              <input id="expiry" type="month" min="2022-02" value="2022-02">
+                              <input type="number" id="ccv" placeholder="CVV">
+                         </div>
+                         
+                         
+                         <input type="text" id="name" placeholder="Name On Card">
+                         <div id="parentCheckBox">
+                              <input type="checkbox" id="checkbox" name="checkbox" value="Save card details for later">
+                              <h2 style="font-weight: 300;color: gray;font-size: 20px;">Save card details for later</h2>
+                         </div>
+                         <h2 style="line-height: 21px; width: 97%;color:#737373;font-size: 18px;font-weight: 400;">This transaction you make is totally secure. We don't save your CVV number.</h2>
+                         <br>
+                         <br>
+                         <input type="submit" value="Pay Now" style="background-color: #d6d6d6;border-radius: 10px;">
+                    </form>
+
+               </div>
+
+          </div>
+
+          <div id="rightContainer1">
+             <div id="rightContainer">
+                   <div id="paymentContainer"></div>
+             </div>
+        </div>
+     </Div>
+
+
+
+
+     
+
+
+     
+</body>
+</html>
+<script>
+     document.querySelector("form").addEventListener("submit",payFun);
+     function payFun()
+     {
+          event.preventDefault();
+          var name = document.querySelector("#name").value;
+          var cardNum = document.querySelector("#cardNum").value;
+          var ccv = document.querySelector("#ccv").value;
+          var expiry = document.querySelector("#expiry").value;
+          // console.log(name,cardNum,ccv,expiry);
+          var cardCheck=(cardNum=="1234567890"||cardNum=="1234567891"||cardNum=="1234567892"||cardNum=="1234567893"||cardNum=="1234567894"||cardNum=="1234567895");
+           var ccvCheck= (ccv==123||ccv==124||ccv==125||ccv==126||ccv==127||ccv==128||ccv==129);
+
+           
+
+
+
+
+
+          if(name&&cardCheck&&ccvCheck&& expiry)
+          {
+              alert("OTP Sent")
+               window.location.href="paymentOtp.html";
+
+          }
+          else
+          {
+               alert("error");
+          }
+
+
+          document.querySelector("#name").value="";
+          document.querySelector("#cardNum").value="";
+          document.querySelector("#ccv").value="";
+          document.querySelector("#expiry").value="2022-02";
+     }
+
+
+// implementation of Payment Details Section
+var payData=JSON.parse(localStorage.getItem("cart"))||[];
+var personalData=JSON.parse(localStorage.getItem("perInfo"))||[];
+var totalRoom = personalData[0].TotalRoom;
+console.log(totalRoom);
+
+
+var frstB=document.createElement("div");
+
+var frstD1=document.createElement("div");
+
+var frstB1=document.createElement("div");
+var order=document.createElement("p");
+order.innerText= "Name"
+order.style.color="gray";
+var userN=document.createElement("h5")
+userN.innerText="Vijay Prakash"
+userN.style.paddingLeft="10px";
+userN.style.marginTop="15px";
+frstB1.style.display="flex";
+frstB1.append(order,userN)
+
+// Delivery Adress details 
+var add="NIMT Boys Hostel Greater Noida"
+var hrD=document.createElement("hr");
+hrD.style.width="100%";
+frstD1.append(frstB1,add,hrD);
+// frstD1.style.borderBottom="1px solid gray";
+var payH=document.createElement("h3");
+payH.innerText="You are Booking this Property"
+payH.style.marginLeft="-75px";
+frstB.append(frstD1,payH)
+document.querySelector("#paymentContainer").append(frstB);
+
+
+
+//here we are wrintng the code for map function
+var length=payData.length;
+var total = payData.reduce(function(sum,el,i,arr){
+          return (sum+Number(el.price));
+     },0);
+     // var total1=total;
+     // console.log("Total"+total);
+
+
+var totalS = payData.reduce(function(sum,el,i,arr){
+          return (sum+Number(el.price));
+     },0);
+
+
+
+
+payData.map(function(el,i,arr){
+//  console.log(el);
+var box = document.createElement("div");
+
+var box1=document.createElement("div");
+
+var img=document.createElement("img");
+img.src=el.url;
+img.style.height="300px";
+img.style.width="400px";
+img.style.borderRadius="10px";
+
+
+
+
+
+var box2=document.createElement("div");
+var name = document.createElement("h3");
+name.innerText=el.name;
+name.setAttribute("id","itemName");
+name.style.color="gray";
+
+
+
+
+
+
+
+
+var deliveryDate=document.createElement("div");
+var date = document.createElement("p");
+date.innerText="Estimated delivery by ";
+var dateE=document.createElement("p");
+dateE.innerText="14 April 2022";
+dateE.style.fontSize="15px";
+dateE.style.marginTop="-15px";
+dateE.style.color="green";
+date.style.color="gray";
+date.style.fontSize="15px";
+date.style.marginTop="-15px";
+box2.style.marginLeft="20px";
+box2.style.marginTop="-15px";
+name.setAttribute("class","name");
+
+var hrD1=document.createElement("hr");
+hrD1.style.width="100%";
+box2.append(name,hrD1);
+
+box1.append(img,box2);
+
+// box1.style.display="flex";
+
+
+
+box.append(box1)
+
+document.querySelector("#paymentContainer").append(box);
+
+});
+
+var priceSummary=document.createElement("h2");
+priceSummary.innerText="Price Summary";
+document.querySelector("#paymentContainer").append(priceSummary);
+          
+          var totalPrice=document.createElement("div");
+          var p1=document.createElement("p")
+          p1.innerText="Total Rent (Incl. of taxes) ";
+          var totalP=document.createElement("p");
+          totalP.innerText="₹"+totalS;
+          totalPrice.style.display="flex";
+          totalPrice.style.justifyContent="space-between";
+          totalPrice.append(p1,totalP);
+
+
+          var dF=document.createElement("div");
+          var p2=document.createElement("p");
+          p2.innerText="Service-Tax";
+          var p3=document.createElement("p");
+          if(length==0)
+          {
+               p3.innerText="Add item";
+               p3.style.color="red";
+          }
+          else if(total>=5000)
+          {
+                p3.innerText="FREE";
+                p3.style.color="green";
+          }
+          else
+          {
+               p3.innerText=("₹ 500");
+          }
+          dF.style.display="flex";
+          dF.style.justifyContent="space-between";
+          dF.style.padding="0px 10px";
+           dF.append(p2,p3);
+
+
+           var discountP=document.createElement("div");
+           var dP1=document.createElement("p");
+           dP1.innerText="Total Room ";
+           var dP2=document.createElement("p");
+           //"- ₹"+(totalS-total);
+           dP2.innerText=totalRoom;
+           console.log(dP2);
+           discountP.append(dP1,dP2);
+           discountP.style.display="flex";
+           discountP.style.justifyContent="space-between";
+           discountP.style.padding="0px 10px";
+
+           var hrD2=document.createElement("hr");
+           hrD2.style.width="100%";
+
+           
+
+           var subT=document.createElement("div");
+          var sT1=document.createElement("h2");
+          sT1.innerText="Final amount ";
+          var sT2=document.createElement("p");
+          if(totalS>=5000)
+          {
+               sT2.innerText="₹ "+total*totalRoom;
+          }
+          else
+          {
+               sT2.innerText="₹ "+(total*totalRoom+500);
+          }
+          
+
+          subT.append(sT1,sT2);
+
+          subT.style.display="flex";
+          subT.style.justifyContent="space-between";
+          subT.style.padding="0px 10px";
+
+          document.querySelector("#paymentContainer").append(totalPrice,dF,discountP,hrD2,subT);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

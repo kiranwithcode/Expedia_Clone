@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="stays.css">
+</head>
+<body>
+     <div id="searchBar">
+          <input type="text" name="" id="search" placeholder="Going to">
+          <input type="date" name="" id="inDate" placeholder="">
+          <input type="date" name="" id="outDate" placeholder="">
+          <input type="number" name="" id="room" placeholder="Total Room">
+          <input type="number" name="" id="person" placeholder="Travellers">
+          <button id="btn" onclick="search()">Search</button>
+     </div>
+     <select name="Sorted" id="sort" onchange="sort()">
+          <option value="">Recommended</option>
+          <option value="lth">Price Low to High</option>
+          <option value="htl">Price High to Low</option>
+          <option value="">Distance from Airport</option>
+          <option value="">Guest rating + our choices</option>
+          <option value="">Property class</option>
+     </select>
+
+
+     <!-- Implementation of main mainBox -->
+     <div id="container">
+     <div id="mainBox">
+          <div id="map">
+               <!-- Google Map Copied Code -->
+               <div class="mapouter"><div class="gmap_canvas">
+                    <iframe class="gmap_iframe" frameborder="0" scrolling="no" 
+                    marginheight="0" marginwidth="0" 
+                    src="https://maps.google.com/maps?width=200&amp;height=100&amp;
+                    hl=en&amp;q=patna&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+               </iframe><a href="https://mcpepro.com/">MCPE</a></div>
+               <style>.mapouter{position:relative;text-align:right;width:200px;height:100px;}
+               .gmap_canvas {overflow:hidden;background:none!important;width:200px;height:100px;
+               }.gmap_iframe {width:200px!important;height:100px!important;}</style></div>
+           </div>
+
+
+
+
+          <h3>Search by property name</h3>
+          <input type="text" name="" id="searchbyProperty">
+          <br>
+          <h3>Filter by</h3>
+          <p>Popular filters</p>
+          <input type="checkbox" id="l1" name="" value="">
+          <label for="l1"> Har Mandir Sahib</label><br>
+          <input type="checkbox" id="l2" name="" value="">
+          <label for="l2">Spa</label><br>
+          <input type="checkbox" id="l3" name="" value="">
+          <label for="l3">Wheelchair-accessible parking</label><br>
+          <input type="checkbox" id="l4" name="" value="">
+          <label for="l4">Lift</label><br>
+          <input type="checkbox" id="l5" name="" value="">
+          <label for="l5">Sign language-capable staff</label><br>
+
+          <div id="byRating">
+               <p>Property class</p>
+               <button onclick="sortByR1()" class="b1">1⭐</button>
+               <button onclick="sortByR2()" class="b1">2⭐</button>
+               <button onclick="sortByR3()" class="b1">3⭐</button>
+               <button onclick="sortByR4()" class="b1">4⭐</button>
+               <button onclick="sortByR5()" class="b1">5⭐</button>
+          </div>
+
+          <div id="byPrice">
+               <p>Your budget</p>
+               <input type="checkbox" id="p1" name="" value="" onclick="sortByPrice()">
+              <label for="p1">Less than Rs2,000</label><br>
+              <input type="checkbox" id="p2" name="" value="">
+              <label for="p2">Rs2,000 to Rs4,000</label><br>
+              <input type="checkbox" id="p3" name="" value="4000" onclick="sortByPrice()">
+              <label for="p3">Rs4,000 to Rs8,000</label><br>
+              <input type="checkbox" id="p4" name="" value="">
+              <label for="p4">Rs8,000 to Rs11,000</label><br>
+              <input type="checkbox" id="p5" name="" value="11000" onclick="sortByPrice()">
+              <label for="p5">Greater than Rs11,000</label><br>
+
+          </div>
+
+          <div id="rewards">
+               <p>Expedia Rewards</p>
+               <input type="checkbox" id="r1" name="" value="">
+              <label for="r1">VIP Access properties</label><br>
+              <input type="checkbox" id="r2" name="" value="">
+              <label for="r2">Member Prices</label><br>
+          </div>
+          <br>
+          <br>
+          <div id="byRating">
+               <p>Guest rating</p>
+               <input type="radio" id="ra1" name="" value="">
+              <label for="ra1">Any</label><br>
+              <input type="radio" id="ra2" name="" value="">
+              <label for="ra2">Wonderful 4.5+</label><br>
+              <input type="radio" id="ra3" name="" value="">
+              <label for="ra3">Very good 4+</label><br>
+              <input type="radio" id="ra4" name="" value="">
+              <label for="ra4">Good 3.5+</label><br>
+          </div>
+          
+          <div>
+               <p>Payment type</p>
+               <input type="checkbox" id="pt1" name="" value="">
+               <label for="pt1">Fully refundable</label><br>
+               <input type="checkbox" id="pt2" name="" value="">
+               <label for="pt2">Reserve now, pay later</label><br>
+          </div>
+
+          <div>
+              <p>Property type</p> 
+              <input type="checkbox" id="prot1" name="" value="">
+               <label for="prot1">Hotel resort</label><br>
+               <input type="checkbox" id="prot2" name="" value="">
+               <label for="prot2">Villa</label><br>
+               <input type="checkbox" id="prot3" name="" value="">
+               <label for="prot3">Hotel</label><br>
+          </div>
+
+          <div>
+               <p>Popular locations</p>
+               <input type="radio" id="pl1" name="" value="">
+              <label for="pl1">Phulwari Sharif</label><br>
+              <input type="radio" id="pl2" name="" value="">
+              <label for="pl2">Buddha Smriti Park</label><br>
+              <input type="radio" id="pl3" name="" value="">
+              <label for="pl3">Buddha Smriti Park</label><br>
+              <input type="radio" id="pl3" name="" value="">
+              <label for="pl3">Patna Museum</label><br>
+          </div>
+
+          <div>
+               <p>Meal plans available</p>
+               <input type="checkbox" id="ml1" name="" value="">
+               <label for="ml1">Breakfast included</label><br>
+               <input type="checkbox" id="ml2" name="" value="">
+               <label for="ml1">Lunch included</label><br>
+               <input type="checkbox" id="ml3" name="" value="">
+               <label for="ml3">Dinner included</label><br>
+          </div>
+
+          <div>
+               <p>Amenities</p>
+               <input type="checkbox" id="a1" name="" value="">
+               <label for="a1">Spa</label><br>
+               <input type="checkbox" id="a2" name="" value="">
+               <label for="a1">Parking</label><br>
+               <input type="checkbox" id="a3" name="" value="">
+               <label for="a3">Electric car charging station</label><br>
+          </div>
+
+          <div>
+               <p>Accessibility</p>
+               <input type="checkbox" id="acs1" name="" value="">
+               <label for="acs1">Wheelchair-accessible parking</label><br>
+               <input type="checkbox" id="acs2" name="" value="">
+               <label for="acs1">Lift</label><br>
+               <input type="checkbox" id="acs3" name="" value="">
+               <label for="acs1">Accessible bathroom</label><br>
+               <input type="checkbox" id="acs4" name="" value="">
+               <label for="acs1">Roll-in shower</label><br>
+               <input type="checkbox" id="acs5" name="" value="">
+               <label for="acs1">In-room accessibility</label><br>
+               <input type="checkbox" id="acs6" name="" value="">
+               <label for="acs1">Service animals allowed</label><br>
+               <input type="checkbox" id="acs7" name="" value="">
+               <label for="acs1">Stair-free path to entrance</label><br>
+               <input type="checkbox" id="acs8" name="" value="">
+               <label for="acs1">Sign language-capable staff</label><br>
+          </div>
+
+          <div>
+               <p>Traveller experience</p>
+               <input type="checkbox" id="te1" name="" value="">
+               <label for="te1">LGBTQ welcoming</label><br>
+               <input type="checkbox" id="te2" name="" value="">
+               <label for="te2">Business-friendly</label><br>
+               <input type="checkbox" id="te3" name="" value="">
+               <label for="te3">Family-friendly</label><br>
+          </div>
+     </div>
+     <div id="hotel"></div>
+
+</div>
+    
+</body>
+</html>
+<script src="stays.js"></script>
