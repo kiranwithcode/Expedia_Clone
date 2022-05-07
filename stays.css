@@ -1,0 +1,100 @@
+#searchBar
+{
+     display: flex;
+     /*justify-content: space-around; */
+     width: 100%;
+     margin: 50px;
+     gap: 30px;
+}
+#search,#inDate,#outDate,#room,#person
+{
+     height: 40px;
+}
+.box1
+{
+     display: flex;
+     justify-content: space-around;
+}
+.image
+{
+     height: 200px;
+     width: 300px;
+     margin: 40px;
+     margin-left: 15%;
+     border-radius: 10px;
+}
+#container
+{
+     display: flex;
+     width: 85%;
+     margin: auto;
+}
+.box2
+{
+     margin-top: 40px;
+     /* text-align: center;  */
+      /* line-height: 20%; */
+}
+.box4
+{
+     margin-top: 30px;
+     /* text-align: center; */
+     line-height: 20%;
+     /* margin-top: 115px; */
+}
+.box5
+{
+     /* text-align: center;  */
+      line-height: 20%;
+      margin-left: 0px;
+      margin-top: 20px;
+}
+#sort
+{
+     margin-left: 75%;
+     height: 40px;
+     width: 200px;
+     font-size: 15px;
+     border-radius: 10px;
+}
+#search
+{
+     width: 400px;
+     border-radius: 10px;
+}
+#inDate,#outDate
+{
+     border-radius: 10px;
+     height: 40px;
+}
+#room,#person
+{
+     border-radius: 10px;
+     height: 40px;
+     width: 100px;
+}
+.b1
+{
+     background-color: white;
+     border-radius: 10px;
+}
+#btn
+{
+     padding: 15px 30px;
+     border-radius: 10px;
+     background-color: #3662d8;
+     border: none;
+     /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+#searchbyProperty
+{
+     height: 30px;
+     width: 250px;
+     border: 2px solid blue;
+     border-radius: 10px;
+}
+.gmap_canvas
+{
+     border-radius: 10px;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+           #t1Container
+          {
+               display: flex;
+               /* justify-content: space-between; */
+               border-top: 1px solid gray;
+               border-bottom: 1px solid gray;
+               padding-bottom: 10px;
+               
+          }
+          #t1img
+          {
+               height: 27px;
+               margin-top: 10px;
+               margin-left: 70px;
+          }
+          #signupLogo
+          {
+               line-height: 0px;
+               /* border: 2px solid red; */
+               margin-left: 55%;
+          }
+           form
+          {
+               width: 15%;
+               margin: auto;
+               margin-top: 20%;
+               margin-left: 40%;
+          }
+          input
+          {
+               width: 300px;
+               height: 40px;
+               margin-bottom: -10px;
+               border-radius: 5px;
+               text-align: center;
+          }
+           h4
+          {
+               font-size: 20px;
+               margin-bottom: 2px;
+               text-align: center;
+          }
+     </style>
+</head>
+<body>
+     <div id="t1Container">
+          <div>
+               <!-- src="D:\Unit2D-Proj\img\H1.png" -->
+               
+               <a href="./index.html">
+
+                    <img id="t1img" src="img\logo.svg" alt="TopHeading Img">
+               </a>
+          </div>
+          <div id="signupLogo">
+               <p style="color: #bdd4e5; font-size: 13px;font-weight: 300;"> Signed as</p>
+               <h4 style="font-weight: 400; font-size: 15px;">BookMyTrip@gmail.com</h4>
+          </div>
+     </div>
+
+     <form action="">
+          <h4>Enter OTP</h4>
+          <input type="number" id="otp" placeholder="Enter OTP">
+          <br>
+          <br>
+          <input type="submit" value="Submit" style="background-color: #f1c65a;border-radius: 10px;">
+     </form>
+</body>
+</html>
+<script>
+     document.querySelector("form").addEventListener("submit",otpFun);
+     function otpFun()
+     {
+          event.preventDefault();
+          //console.log("inside otp fun");
+          var x=document.querySelector("#otp").value;
+          if (x=="012"||x=="123"||x=="1234"||x=="124"||x=="125"||x=="126"||x=="127"||x=="128"||x=="129"||x=="120")
+               {
+                    alert("payment successful");
+                    window.location.href="index.html";
+               }
+               else
+               {
+                    alert("OTP is incorrect");
+                   window.location.href="Payment.html"; //after payment to change page location
+               }
+
+
+
+               document.querySelector("#otp").value="";
+     }
+</script>
