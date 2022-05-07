@@ -103,6 +103,7 @@
            <p class="logo-out1"><i class="fa-solid fa-calendar-day"></i></p>
            <input type="date" placeholder="check out" class="input-out3"/>
        </div>
+       
        <div class="logo1">
         <p class="logo-out1"><i class="fa-solid fa-calendar-day"></i></p>
         <input type="date" placeholder="check out" class="input-out3"/>
@@ -245,4 +246,10 @@
     import navbar from "./components/navbar.js";
     let header = document.getElementById("header");
     header.innerHTML = navbar();
+
+    document.getElementById("sear").addEventListener('click', function(){
+        window.location.href = "my_package.html"
+    })
+
+
 </script>

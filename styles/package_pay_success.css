@@ -1,0 +1,28 @@
+  
+body{
+    background-color: #f8f5f4;
+}
+#recpCont{
+    width: 400px;
+    margin: auto;
+    margin-top: 150px;
+    /* border: 1px solid green; */
+    text-align: center;
+    /* background-color: rgba(170, 170, 239, 0.933); */
+    background-color: #fff;
+    /* color: #fff; */
+    color: rgb(0, 231, 0);
+    border-radius: 10px;
+}
+#recpCont h2,h1,h3{
+    color: black;
+}
+#recpCont button{
+    border: none;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+body{
+    background-color: #f8f5f4;
+}
+.main-input{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    margin-top: 10px;
+}
+.input-out{
+    height: 50px;
+    width: 400px;
+    border: 1px solid black;
+    padding-left: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 17px;
+    color: black;
+}
+.logo-out{
+    position: absolute;
+    margin-top: 20px;
+    padding-left: 50px;
+    font-size: 20px;
+}
+.input-out1{
+    height: 50px;
+    width: 170px;
+    border: 1px solid black;
+    padding-left: 50px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 13px;
+    color: black;
+}
+
+.check{
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 180px;
+    font-weight: lighter;
+
+}
+input{
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.check button{
+    background-color: rgb(45, 45, 237);
+    border: 0;
+    border-radius: 10px;
+    padding: 15px 170px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.check button:hover{
+    background-color: rgb(60, 60, 219);;
+}
+.choose-stay{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.choose-stay{
+    display: flex;
+}
+.choose-stay p {
+    margin-left: 30px;
+    font-size: 15px;
+    color: gray;
+}
+.choose-stay p span{
+    margin-left: 15px;
+  
+}
+.main-data{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 200px;
+    
+}
+/* .main-data .left-div, .right-div{
+    border: 1px solid black;
+} */
+.left-div {
+    width: 28%;
+}
+.left-div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.left-div .map{
+    margin-left: 30px;
+    width: 300px;
+    height: 180px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+}
+.hr-line{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+::selection{
+    color: #fff;
+    background: #664AFF;
+  }
+  
+.wrapper{
+    max-width: 450px;
+    /* margin: 150px auto; */
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+  .wrapper h3{
+      margin-bottom: 10px;
+      color: rgba(0, 0, 0, 0.847);
+  }
+  
+  .wrapper .search-input{
+    /* background: #fff; */
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    /* box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12); */
+  }
+  
+  .search-input input{
+    height: 55px;
+    width: 100%;
+    outline: none;
+    /* border: none; */
+    border-radius: 5px;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+  }
+  
+  .search-input.active input{
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .search-input .autocom-box{
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 280px;
+    overflow-y: auto;
+  }
+  
+  .search-input.active .autocom-box{
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .autocom-box li{
+    list-style: none;
+    padding: 8px 12px;
+    display: none;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+  }
+  
+  .search-input.active .autocom-box li{
+    display: block;
+  }
+  .autocom-box li:hover{
+    background: #efefef;
+  }
+  
+  .search-input .icon{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 20px;
+    color: #644bff;
+    cursor: pointer;
+  }
+  .filter-by{
+      margin-top: 20px;
+      margin-left: 30px;
+  }
+  .checkboxes{
+      margin-top: 20px;
+  }
+  .checkboxes h4{
+      margin-bottom: 20px;
+  }
+  .popular-filter{
+      margin-top: 20px;
+  }
+  .popular-filter h4{
+      margin-bottom: 20px;
+  }
+  .popular-filter .popular-check{
+      margin-top: 10px;
+  }
+  input.large-check{
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+
+.star-filter{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+h4{
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.81);
+    margin-bottom: 15px;
+}
+.star-filter .star{
+    border: 1px solid black;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.star-filter .star:hover{
+    background-color: rgb(230, 224, 224);
+}   
+.guest-rating{
+    margin-top: 20px;
+}
+.guest-rating h4{
+    margin-bottom: 20px;
+}
+.right-div{
+    width: 70%;
+
+}
+.rigth-top{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.right-top div{
+    border: 1px solid black;
+}
+#sort{
+    padding: 15px;
+    width: 350px;
+    border-radius: 10px;
+    font-size: 16px; 
+}
+.info-p{
+    font-size: 15px;
+    line-height: 1.8;
+}
+.refund-info{
+    margin-top: 20px;
+    display: flex;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 10px;
+    gap: 10px;
+}
+.refund-info div a{
+    line-height: 1.6;
+    text-decoration: none;
+}
+.refund-info div a:hover{
+    text-decoration: underline;
+}
+.refund-info div p{
+    font-size: 14px;
+}
+h5{
+    font-size: 14px;
+}
+#packages-data {
+    margin-top: 20px;
+
+
+}
+#packages-data .box{
+    display: flex;
+    margin-bottom: 20px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+#packages-data img{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px ;
+}
+
+
+#packages-data .conPriDiv{
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid green; */
+    width: 100%;
+    padding: 10px;
+}
+#packages-data .contentDiv{
+    /* margin-right: 150px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#packages-data a{
+    text-decoration: none;
+    color: black;
+}
+.imgdiv img{
+    width: 300px;
+    height: 180px;
+}
+.left{
+    background-color: teal;
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 12px;
+}
+.priceDiv{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    margin-top: 50px;
+}
+.priceDiv .price{
+    font-size: 22px;
+    margin-top: 10px;
+    color: black;
+}
+.area{
+    color: rgba(0, 0, 0, 0.78);
+    font-size: 14px;
+}
+.name{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.895);
+}
+
+
