@@ -1,10 +1,26 @@
 let paymentData = JSON.parse(localStorage.getItem("detailData"))
 console.table(paymentData)
 
+let perInfo = JSON.parse(localStorage.getItem("perInfo"))
+// console.table(perInfo[1].checkIn)
+// let in_date = perInfo[0].checkIn
+// let out_date = perInfo[1].checkOut
+
+
 let total_price = JSON.parse(localStorage.getItem("total")) | []
 
 let box = document.createElement("div")
 box.setAttribute('class','box')
+
+
+
+let checkInDate = document.createElement("p")
+checkInDate.innerHTML= perInfo[0].checkIn
+checkInDate.setAttribute('class','checkIn')
+
+let checkOutDate = document.createElement("p")
+checkOutDate.innerHTML= perInfo[0].checkOut
+checkOutDate.setAttribute('class','checkOut')
 
 let img = document.createElement("img")
 img.src = paymentData.image
@@ -29,13 +45,6 @@ let refund = document.createElement("p")
 refund.innerHTML= paymentData.refund
 refund.setAttribute('class','refund')
 
-let checkIn = document.createElement("p")
-checkIn.innerHTML= "Check-in: Fri, 20 May"
-checkIn.setAttribute('class','checkIn')
-
-let checkOut = document.createElement("p")
-checkOut.innerHTML= "Check-out: Sat, 21 May"
-checkOut.setAttribute('class','checkOut')
 
 let oneNight = document.createElement("p")
 oneNight.innerHTML= "1-night stay"
@@ -56,11 +65,11 @@ let taxPriceDiv = document.createElement("div")
 taxPriceDiv.setAttribute('class','taxPriceDiv')
 
 let roomnight = document.createElement("p")
-roomnight.innerHTML= "1 room x 1 night"
+roomnight.innerHTML=`${perInfo[0].totalRoom} room x 1 night`
 roomnight.setAttribute('class','roomnight')
 
 let price = document.createElement("p")
-price.innerHTML= `Rs${paymentData.price}`
+price.innerHTML=`Rs${(Number(paymentData.price) * Number(perInfo[0].totalRoom)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}` 
 price.setAttribute('class','price')
 
 let taxes = document.createElement("a")
@@ -68,7 +77,7 @@ taxes.innerHTML = `<a href="">Taxes and service fees </a>`
 taxes.setAttribute('class','taxes')
 
 let taxPrice = document.createElement("p")
-taxPrice.innerHTML=  "Rs3500"
+taxPrice.innerHTML=  "Rs3,500"
 taxPrice.setAttribute('class','taxPrice')
 
 let hr1 = document.createElement("hr")
@@ -79,8 +88,9 @@ totalDiv.setAttribute('class','totalDiv')
 let total = document.createElement("h3")
 total.innerHTML = "Total"
 
+// let total = ()
 let totalPrice = document.createElement("h3")
-totalPrice.innerHTML = `Rs${Number(paymentData.price) + 3500}`
+totalPrice.innerHTML = `Rs${(Number(paymentData.price) * Number(perInfo[0].totalRoom) + 3500).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`
 
 let promo = document.createElement("a")
 promo.innerHTML = `<a href="">Use a coupon, credit, or promotion code </a>`
@@ -94,7 +104,7 @@ totalDiv.append(total,totalPrice)
 roomPriceDiv.append(roomnight,price)
 taxPriceDiv.append(taxes,taxPrice)
 priceDiv.append(pricehead,hr,roomPriceDiv,taxPriceDiv,hr1,totalDiv,promo,lastpara)
-box.append(img,name1,rating,guest,room,refund,checkIn,checkOut,oneNight)
+box.append(img,name1,rating,guest,room,refund,checkInDate,checkOutDate,oneNight)
 document.querySelector(".right").append(box,priceDiv)
 
 
@@ -106,6 +116,13 @@ document.querySelector(".right").append(box,priceDiv)
 
 
 function clickcomplete(total_price){
-   
-    window.location.href = "package_pay_success.html"
+   document.getElementById("cardnumber").ariaValueMax;
+    cardN = document.getElementById("cardnumber").value;
+    if(cardN == ""){
+        alert("Please fill payment details❌")
+    }
+    else{
+        window.location.href = "package_pay_success.html"
+    }
+    
 }

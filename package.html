@@ -114,7 +114,7 @@
            <label for="chck">I only need accommodation for part of my trip </label>
        </div>
        
-       <button id="sear">Search</button>
+       <button id="sear" style="cursor: pointer;">Search</button>
     </div>
     <div id="box2">
       <img id="first_img" src="https://a.travel-assets.com/travel-assets-manager/ux-887/Global-HP-Hero-928x398.jpg" alt="img">
@@ -246,9 +246,16 @@
     import navbar from "./components/navbar.js";
     let header = document.getElementById("header");
     header.innerHTML = navbar();
-
+    //inputField = document.querySelector(".input-out").value;
     document.getElementById("sear").addEventListener('click', function(){
-        window.location.href = "my_package.html"
+        
+        //if(inputField==""){
+        //    alert("Please fill source to destination !")
+        //}
+        //else{
+            window.location.href = "my_package.html"
+        //}
+        
     })
 
 
