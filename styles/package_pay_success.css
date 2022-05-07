@@ -1,11 +1,14 @@
-  
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  } 
 body{
     background-color: #f8f5f4;
 }
 #recpCont{
     width: 400px;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 50px;
     /* border: 1px solid green; */
     text-align: center;
     /* background-color: rgba(170, 170, 239, 0.933); */
@@ -20,9 +23,17 @@ body{
 #recpCont button{
     border: none;
     padding: 10px 15px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     border-radius: 10px;
     background-color: blue;
     color: white;
     cursor: pointer;
 }
+.recComplete img{
+    width: 300px;
+    /* margin-top: 100px; */
+    /* height: 300px; */
+}
+/* #recpCont #rectCont1 {
+    margin-top: -100px;
+} */

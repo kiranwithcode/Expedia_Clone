@@ -7,7 +7,7 @@ function navbar(){
                 <img src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2" alt="" id="">
                 </a></li>
                 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-            <select name="travel" id="travel">
+                <select name="travel" id="travel">
                 <option value="" selected disabled>More Travel</option>
                 <option value="">Stays</option>
                 <option value="">Flights</option>

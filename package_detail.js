@@ -148,6 +148,47 @@ document.querySelector("#details").append(box)
 // document.querySelector(".box").append(stay,mainImgDiv,ul,hr,maindiv,popularAm,downimg)
 
 
-function goPayment(detailData){
-    window.location.href = "package_payment.html"
+// function goPayment(detailData){
+//     window.location.href = "package_payment.html"
+// }
+
+// function bookingBtn()
+// {
+//      window.location.href="#fillRoom";
+// }
+
+function goPayment()
+{
+     window.location.href="#fillRoom";
 }
+
+document.querySelector("#btn").addEventListener("click", bookRoom)
+function bookRoom(){
+    let inDate = document.getElementById("inDate").value;
+    let outDate = document.getElementById("outDate").value;
+    let room = document.getElementById("room").value;
+    let person = document.getElementById("person").value;
+    console.log(inDate,outDate,room,person);
+
+    let personalInfo = [{
+         totalRoom:room,
+         totalPerson:person,
+         checkIn:inDate,
+         checkOut:outDate,
+    }];
+
+    localStorage.setItem("perInfo",JSON.stringify(personalInfo));
+    console.log(personalInfo);
+    if(inDate&&outDate&&room&&person)
+    {
+         window.open("package_payment.html");
+    }
+    else
+    {
+         alert("Fill All The Details");
+    }
+   
+}
+
+
+
