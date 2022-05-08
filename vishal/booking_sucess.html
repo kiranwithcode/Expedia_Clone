@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    
+    <title>receipt</title>
+  </head>
+  <style>
+      body{
+    background-color: #f8f5f4;
+}
+#recpCont{
+    width: 400px;
+    margin: auto;
+    margin-top: 150px;
+    /* border: 1px solid green; */
+    text-align: center;
+    /* background-color: rgba(170, 170, 239, 0.933); */
+    background-color: #fff;
+    /* color: #fff; */
+    color: rgb(0, 231, 0);
+    border-radius: 10px;
+}
+#recpCont h2,h1,h3{
+    color: black;
+}
+#recpCont button{
+    border: none;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+  </style>
+  <body id="body">
+    <div id="recpCont">
+      <div class="rectCont1">
+        <div class="recComplete">
+          <i class="fas fa-check-circle fa-5x"></i>
+        </div>
+        <h1>Booking Confirm!!!</h1>
+
+        <h2 id="name"></h2>
+        <h3>Date : 09 May 2022</h3>
+        <!-- <h2>Amount : Rs 11,036.11</h2> -->
+       
+      </div>
+      <button class="btn" onclick="goHome()">Go to Home</button>
+    </div>
+  </body>
+</html>
+<script>
+    let name= localStorage.getItem("name")
+  
+    let full=document.getElementById("name")
+    full.innerText=name;
+
+    function goHome(){
+      window.location.href="thingmain.html"
+    }
+
+
+
+
+
+
+</script>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <div id="navbar">
+        <div class="logo"><img src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27" alt=""></div>
+        <div class="sign"><span><i class="fas fa-user"></i>Sign in</span></div>
+    </div>
+    <!-- end of navbar -->
+    <div class="top-review">
+        <h1 class="top-review-head">Review and book</h1>
+        <!-- <p class="p-green">✔️You've picked a winner! This hotel is rated 4.7/5</p> -->
+    </div>
+    <!-- end of review -->
+    <div class="main">
+        <div class="left">
+            <div class="sign-in">
+                <span><i class="fas fa-lock"></i><a href="">
+                    Sign in to earn 713 Expedia Rewards points</a></span>
+            </div>
+
+            <div class="room-details">
+                <span><i class="fas fa-user"></i><b>Room 1:</b> 2 Adults 1 King Bed Non-smoking</span>
+                <div class="facility">
+                    <p>
+                      <span><i class="fa fa-check" aria-hidden="true"></i></span>
+                      <span> Breakfast included </span>
+                      <span><i class="fa fa-check" aria-hidden="true"></i></span>
+                      <span> Free Parking</span>
+                      <span><i class="fa fa-check" aria-hidden="true"></i></span>
+                      <span> Free wifi</span>
+                    </p>
+                  </div>
+
+                  <form action="" id="form">
+                    <label for="first_name" class="label_first">First Name</label>
+                    <label for="surname" class="label_second">Surname</label> <br />
+                    <br />
+                    <input
+                      type="text"
+                      name=""
+                      id="firstname"
+                      required
+                      placeholder="(e.g. john)"
+                    />
+                    <br />
+      
+                    <input
+                      type="text"
+                      name=""
+                      id="surname"
+                      placeholder="(e.g. Smith)"
+                      required
+                    />
+                    <br />
+                    <label for="" class="mob_label">Mobile phone number</label>
+                    <br />
+                    <select name="" id="country" onchange="country_code()">
+                      <option value="Select_Country">Select Country</option>
+                      <option value="IND">ind</option>
+                      <option value="US">US</option>
+                      <option value="UK">UK</option>
+                    </select>
+                    <br />
+                    <input type="tel" id="output" placeholder="Enter Phone Number" />
+                    <br />
+                    <input type="checkbox" id="box" /><label
+                      for=""
+                      class="charge_label"
+                    >
+                      Receive text alerts about this trip (free of charge).</label
+                    >
+                    <br />
+                    <input type="submit" id="submit" value="Special Requests (optional)" />
+                  </form>
+            </div>
+            <!-- end of details booking -->
+            <div class="paymentinfo">
+                <div class="payment">
+                  <div class="secureInfo">
+                    <div>
+                      <p></p>
+                      <i class="fas fa-credit-card fa-lg"></i>
+                    </div>
+        
+                    <div>
+                      <p>
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <span> We use secure transmission</span>
+                      </p>
+                    </div>
+                    <div>
+                      <p>
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <span>We protect your personal information</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="cardinfo">
+                    <button class="debit">Deite/Credit Card</button>
+                    <button class="netbanking">NetBanking</button>
+                    <hr />
+                  </div>
+                  <div class="cardicon">
+                    <i class="fab fa-cc-mastercard fa-lg"></i>
+                    <i class="fab fa-cc-amex fa-lg"></i>
+                    <i class="fab fa-cc-paypal fa-lg"></i>
+                    <i class="fab fa-cc-visa fa-lg"></i>
+                  </div>
+                  <div>
+                    <form action="" id="cardform">
+                      <label for="name">Name on Card</label><br />
+                      <input type="text" id="cardname" size="70" required /><br />
+                      <label for="number">Debit/Credit card number</label><br />
+                      <input type="text" id="cardnumber" size="30" required /><br />
+                      <label for="date">Expiry date</label><br />
+                      <select id="expMonth" required onchange="show_month()">
+                        <option value="">--Select Month--</option>
+                        <option selected value="1">Janaury</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                      </select>
+                      <select id="expYear" required onchange="show_year()">
+                        <option value="">--Select Year--</option>
+                        <option selected value="1">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                        <option value="2031">2031</option>
+                        <option value="2032">2032</option>
+                      </select>
+                      <br />
+                      <label for="scode" class="scode">Security code</label><br />
+                      <input type="text" id="scode" size="1" required />
+                    </form>
+                  </div>
+                </div>
+
+                <!-- end of payment  -->
+                <div class="manageBooking">
+                    <h2>Manage your booking</h2>
+                    <hr />
+                    <div class="conf_email">
+                      <h3>Confirmation email</h3>
+                      <p>
+                        Please enter the email address where you would like to receive your
+                        confirmation.
+                      </p>
+                    </div>
+                    <form action="" id="final_email">
+                      <label for="" class="label1">Email address*</label> <br />
+                      <input type="email" id="final_inp_email" size="60" /> <br />
+                      <input type="checkbox" id="box1" /><label for="">
+                        Receive text alerts about this trip (free of charge).</label
+                      >
+                    </form>
+                  </div>
+                  <div id="complete">
+                    <h3>Important information about your booking</h3>
+                    <div class="book_info_list">
+                      <ul>
+                        <li>
+                          This rate is non-refundable. If you change or cancel your booking
+                          you will not get a refund or credit to use for a future stay. This
+                          policy will apply regardless of COVID-19, subject to any local
+                          consumer laws.
+                        </li>
+                        <li>
+                          No refunds will be issued for late check-in or early check-out.
+                        </li>
+                        <li>Stay extensions require a new reservation.</li>
+                        <li>
+                          Front desk staff will greet guests on arrival. For more details,
+                          please contact the property using the information on the booking
+                          confirmation.
+                        </li>
+                        <li>
+                          To register at this property, guests who are Indian citizens must
+                          provide a valid photo identity card issued by the Government of
+                          India; travelers who are not citizens of India must present a
+                          valid passport and visa.
+                        </li>
+                        <li>
+                          Please note that BEX Travel Asia Pte Ltd and the hotel will not
+                          issue a tax invoice. You will receive a commercial receipt for the
+                          purpose of the transaction.
+                        </li>
+                        <li>
+                          You'll be asked to pay the following charges at the property:
+                        </li>
+                        <ul>
+                          <li>
+                            Christmas Eve (24 December) Gala Dinner per adult: INR 4130
+                          </li>
+                          <li>
+                            Christmas Eve (24 December) Gala Dinner per child: INR 4130
+                            (from 6 to 12 years old)
+                          </li>
+                          <li>
+                            New Year's Eve (31 December) Gala Dinner per adult: INR 8260
+                          </li>
+                          <li>
+                            New Year's Eve (31 December) Gala Dinner per child: INR 8260
+                            (from 6 to 12 years old)
+                          </li>
+                        </ul>
+                        <li>
+                          We have included all charges provided to us by the property.
+                        </li>
+                      </ul>
+                    </div>
+                    <p>
+                      By clicking on the button below, I acknowledge that I have reviewed
+                      the <a href="#"> Privacy Statement </a> and
+                      <a href="#">Government Travel Advice</a>and have reviewed and accept
+                      the <a href="#"> Rules & Restrictions</a> <a href="">Terms of Use </a>
+                    </p>
+                    <button id="booking_done" onclick="clickcomplete()">
+                      Complete Booking
+                    </button>
+                    <div class="protection_security_info">
+                      <i class="fas fa-lock"></i>
+                      <p>
+                        We use secure transmission and encrypted storage to protect your
+                        personal information.
+                      </p>
+                    </div>
+                    This payment will be processed in India. This does not apply when the
+                    travel provider (airline/hotel/rail, etc.) processes your payment.
+                    </div>
+            </div> 
+        </div>
+
+        <!-- end of left -->
+    <div class="right">
+        
+    </div>
+</div>
+</body>
+</html>
+<script >
+  function clickcomplete(){
+   let first=document.getElementById("firstname").value
+   let end=document.getElementById("surname").value
+    let full= first+" "+end;
+    localStorage.setItem("name" ,full)
+    window.location.href="booking_sucess.html"
+  }
+</script>
