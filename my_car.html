@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/navbarStyles.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/my_car.css">
+    <script src="https://kit.fontawesome.com/8ada446efc.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8ada446efc.js" crossorigin="anonymous"></script>
+
+    <title>My Car</title>
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <div id="container">
+    <div id="first">
+        <h3 id="h3">SEARCH RESULTS</h3>
+        <h3>OPTIONS</h3>
+        <h3>DETAILS</h3>
+        <h3>CONFIRMATION</h3>
+    </div>
+
+    <div id="second">
+        <div id="left1">
+           <div id="l_top">
+            <h3>Search details</h3>
+            <hr>
+            <div id="pick">
+                <p> <i class="fa-solid fa-location-dot"></i> &ensp; &ensp; Pick-Up</p>
+                <h4>Nagasaki - Airport</h4>
+                <h4>18 May 2022 &ensp; &ensp; &ensp;
+    
+                    10:30 am</h4>
+            </div>
+            <div id="drop">
+                <p> <i class="fa-solid fa-location-dot"></i> &ensp; &ensp; Drop-off</p>
+                 <h4>Nagasaki - Airport</h4>
+                  <h4>19 May 2022 &ensp; &ensp; &ensp;
+    
+                    10:30 am</h4>
+            </div>
+            <div id="currency">
+                <p>Currency: <h4>INR</h4></p>
+            </div>
+            
+
+            <button id ="edit">Edit</button>
+
+            
+           </div>
+           <div id="filter">
+               <div id="f">
+                <h3>Filter</h3>
+                <button id="clear">Clear</button>
+               </div>
+               <hr>
+              
+               <div id="policy">
+                   <h4 class="h"><i class="fa-regular fa-gas-pump"></i> Fuel Policy</h4>
+                  <div class="check1">
+                    <input class="input" type="checkbox" name="" id="">
+                    <label>Fully Charged</label>  <br>
+                    <input class="input" type="checkbox" name="" id="">
+                    <label>Full to Full</label>
+                 
+                  </div>
+                  <hr>
+                  <h4 class="h"><i class="fa-solid fa-tree-decorated"></i> Eco Friendly</h4>
+
+                  <div class="check1">
+                    <input class="input" type="checkbox" name="" id="">
+                    <label>Fully Charged</label>  <br>
+                    <input class="input" type="checkbox" name="" id="">
+                    <label>Full to Full</label>
+                 
+                  </div>
+
+                  <hr>
+                  <h4 class="h"><i class="fa-solid fa-gear"></i> Car Specifications</h4>
+
+                  <div class="check1">
+                    <input class="input" type="checkbox" name="" id="">
+                    <label>Air Conditioning</label>  <br>
+                    <input class="input" type="checkbox" name="" id="">
+                    <label>GPS</label> <br>
+                    <input class="input" type="checkbox" name="" id="">
+                    <label>Petrol</label>
+                 
+                  </div>
+
+
+                  <hr>
+                  <h4 class="h"> Supplier</h4>
+
+                  <div class="check1">
+                    <input class="input" type="checkbox" name="" id="">
+                    <label><img class="ima" src="https://ct-supplierimage.imgix.net/car/alamo.pdf?output=auto&w=62&q=80&dpr=1" alt=""> Alamo</label>  <br>
+                    <input class="input" type="checkbox" name="" id="">
+                    <label> <img class="ima" src="https://ct-supplierimage.imgix.net/car/europcar.pdf?output=auto&w=62&q=80&dpr=1" alt=""> Europecar</label> <br>
+                    <input class="input" type="checkbox" name="" id="">
+                    <label><img class="ima" src="https://ct-supplierimage.imgix.net/car/niconico.pdf?output=auto&w=62&q=80&dpr=1" alt=""> Niconico</label> <br>
+                    <input class="input" type="checkbox" name="" id="">
+                    <label><img class="ima" src="https://ct-supplierimage.imgix.net/car/nissanrentacar.pdf?output=auto&w=62&q=80&dpr=1" alt=""> Nissan</label> <br>
+                    <input class="input" type="checkbox" name="" id="">
+                    <label> <img class="ima" src="https://ct-supplierimage.imgix.net/car/times.pdf?output=auto&w=62&q=80&dpr=1" alt=""> Times</label> <br>
+                 
+                  </div>
+
+                  <hr>
+                  <h4 class="h"> Deals and Features</h4>
+
+                  <div class="check1">
+                    <input class="input" type="checkbox" name="" id="">
+                    <label>Free Additional Driver</label>  <br>
+                    <input class="input" type="checkbox" name="" id="">
+                    <label>Free GPS</label> <br>
+                    <input class="input" type="checkbox" name="" id="">
+                    <label>Guaranteed Car Model</label> <br>
+                    <input class="input" type="checkbox" name="" id="">
+                    <label>Pre Registration Available</label> <br>
+                    <input class="input" type="checkbox" name="" id="">
+                    <label> Sanitized Car</label> <br>
+                 
+                  </div>
+
+                  <hr>
+                  <div id="passenger">
+                      <h4>Passengers</h4>
+                      
+                      <div id="p">
+                          <p> <i class="fa-solid fa-user"></i> 1-4</p>
+                          <p> <i class="fa-solid fa-user"></i> 5</p>
+                          <p> <i class="fa-solid fa-user"></i> 6+</p>
+                      </div>
+                  </div>
+
+
+                  <hr>
+                  <h4 class="h"> <i class="fa-solid fa-circle-star"></i> Excess <i class="fa-solid fa-circle-info"></i></h4>
+
+                  <div class="check1">
+                    <input class="input" type="checkbox" name="" id="">
+                    <label>Rs 501 - Rs 1000/-</label>  <br>
+                    <input class="input" type="checkbox" name="" id="">
+                    <label>Rs 2000+</label>
+                 
+                  </div>
+
+                 
+                    
+                  
+               </div>
+           </div>
+             
+        </div>
+        
+        <div id="right">
+             <p id="book"> <i class="fa-thin fa-circle-check"></i> &ensp; &ensp;   Book today and be confident with our flexible cancellation policy.</p>
+
+             <div id="car1"></div>
+
+             <div id="show">
+                <div id="l">
+                    <p>Showing <i class="i"> 8 </i>out of <i class="i"> 22</i>
+                         cars available in <br>
+                      <i  class="i"> Nagasaki-Airport </i> </p>
+                </div>
+                <div id="r">
+                    <p>Sort By:</p>
+                    <button id="rec">Recommended <i class="fa-thin fa-circle-info"></i></button>
+                    <button id="ltoh">Low to High</button>
+                    <button id="rate">Rating</button>
+                </div>
+              
+              
+             
+                
+             </div>
+             <hr>
+             <div id="eco">
+                <p>Filters applied:</p>
+                <button id="e">Economy</button>
+             </div>
+             
+            <div id="container1">
+                <div id="on"></div>
+                <div id="tw"></div>
+                <div id="thr"></div>
+                <div id="for"></div>
+
+            </div>
+            
+            
+            
+            
+        </div>
+    </div>
+   <div id="third">
+       <button id="expedia">Add Your Property to Expedia</button>
+       <h5 class="trip">Trip Planning ^</h5>
+       <div id="top">
+           <div id="left-top"> <h4>International Destinations</h4></div>
+           <div id="right-top">
+               <p>Check out Expedia's featured travel destinations, which gives you a full selection of hotels to suit any budget in the most popular destinations in India and the world at large. Find the hotel that is right for you using our star ratings, guest reviews, location maps & great discount rates.</p>
+
+               <div id="link">
+                   <a href="#">Singapore Hotels</a>
+                   <a href="#"> Hong Kong Hotels</a>
+                   <a href="#"> Kuala Lumpur Hotels</a>
+                   <a href="#"> Bangkok Hotels</a>
+                   <a href="#"> Pattaya Hotels</a>
+                   <a href="#">Paris Hotels</a>
+                   <a href="#"> Bali Hotels</a>
+                   <a href="#">Maldives Hotels</a>
+                   <a href="#"> Dubai Hotels</a>
+                   <a href="#"> New York Hotels</a>
+                   <a href="#">London Hotels</a>
+                   <a href="#"> Mauritius Hotels</a>
+                   <a href="#"> Melbourne Hotels</a>
+                   <a href="#"> Sydney Hotels</a>
+                   <a href="#">Las Vegas Hotels</a>
+                   <a href="#"> Krabi Hotels</a>
+               </div>
+           </div>
+       </div>
+
+       <div id="top1">
+        <div id="left-top1"> <h4>Domestic Destinations</h4></div>
+        <div id="right-top1">
+<p>
+    Travelling within India? Check out our most popular domestic travel destinations with great selection of hotel partners, hotel reviews and our best travel deals!</p>
+            <div id="link1">
+                <a href="#">Singapore Hotels</a>
+                <a href="#"> Hong Kong Hotels</a>
+                <a href="#"> Kuala Lumpur Hotels</a>
+                <a href="#"> Bangkok Hotels</a>
+                <a href="#"> Pattaya Hotels</a>
+                <a href="#">Paris Hotels</a>
+                <a href="#"> Bali Hotels</a>
+                <a href="#">Maldives Hotels</a>
+                <a href="#"> Dubai Hotels</a>
+                <a href="#"> New York Hotels</a>
+                <a href="#">London Hotels</a>
+                <a href="#"> Mauritius Hotels</a>
+                <a href="#"> Melbourne Hotels</a>
+                <a href="#"> Sydney Hotels</a>
+                <a href="#">Las Vegas Hotels</a>
+                <a href="#"> Krabi Hotels</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="top2">
+        <p>All prices and offers are subject to change with availability. Hotel prices are per night based on twin share, and excludes taxes and fees. Flight prices are per person and includes taxes and fees unless otherwise stated. Flight + hotel prices are per person, based on twin share, and include taxes and fees unless otherwise stated. Offers may be discontinued without notice.
+
+        </p>
+        <p>⁺ Sample prices are “from” prices and based on rates for travel within the next 45 days. Sample prices are subject to conditions above and limited availability. Prices vary by date, length of stay, hotel selected, hotel room category, departure city, and availability. Additional restrictions including minimum stay, blackout dates, available room types and advance purchase may apply.</p>
+        <p>*Savings based on all package bookings with Flight + Hotel on Expedia.co.in from January 2018 to December 2018, as compared to the price of the same components booked separately. Savings will vary based on origin/destination, length of trip, stay dates and selected travel supplier(s). Savings not available on all packages.</p>
+    </div>
+    <h5 class="trip">Explore More ^</h5>
+    <div id="top3">
+        <div id="left-top3"> <h4>More Travel Options</h4></div>
+        <div id="right-top3">
+
+            <div id="link3">
+                <a href="#">Singapore Hotels</a>
+                <a href="#"> Hong Kong Hotels</a>
+                <a href="#"> Kuala Lumpur Hotels</a>
+                <a href="#"> Bangkok Hotels</a>
+                <a href="#"> Pattaya Hotels</a>
+                <a href="#">Paris Hotels</a>
+                <a href="#"> Bali Hotels</a>
+                <a href="#">Maldives Hotels</a>
+                <a href="#"> Dubai Hotels</a>
+                <a href="#"> New York Hotels</a>
+                <a href="#">London Hotels</a>
+                <a href="#"> Mauritius Hotels</a>
+                <a href="#"> Melbourne Hotels</a>
+                <a href="#"> Sydney Hotels</a>
+                <a href="#">Las Vegas Hotels</a>
+                <a href="#"> Krabi Hotels</a>
+            </div>
+        </div>
+    </div>
+    <div id="top4">
+        <div id="left-top4"><h4>Expedia</h4></div>
+        <div id="right-top4">
+            <a class="a1" href="#">  About Us</a>
+            <a class="a1" href="#"> Privacy Policy</a>
+            <a class="a1" href="#"> Terms of Use</a>
+            <a class="a1" href="#"> Support</a>
+           
+        </div>
+    </div>
+
+    <!--  -->
+    <div id="top5">
+        <div id="left-top5"><h4>Partner Services   </h4></div>
+     
+        <div id="right-top5">
+            <a class="a1" href="#">   Expedia Partner Central</a>
+               
+            <a class="a1" href="#"> Add a property</a>
+            <a class="a1" href="#"> Expedia Partner Solutions API</a>
+            <a class="a1" href="#">  Add an Activity</a>
+           <a class="a1" href="#"> Travel Agencies</a>
+           <a class="a1" href="#">Become an Affiliate</a>
+        </div>
+    </div>
+    <div id="top6">
+        <div id="left-top6"><h4> Global Sites   </h4></div>
+     
+        <div id="right-top6">
+            <a class="a2" href="#"> <img class="img2" src="https://cdn.britannica.com/97/1597-004-05816F4E/Flag-India.jpg" alt=""> </a>
+               
+            <a class="a2" href="#"><img src="https://images.unsplash.com/photo-1628510118714-d2124aea4b8a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" alt="" class="img2"> </a>
+            <a class="a2" href="#"> <img src="https://cdn.wionews.com/sites/default/files/2020/07/22/150961-untitled-design-30.jpg" alt="" class="img2"> </a>
+            <a class="a2" href="#">  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS3gOBFa0gBo1bcM4b0fDnDCmT5sSvNKVwLA&usqp=CAU" alt="" class="img2"> </a>
+           <a class="a2" href="#"> <img src="https://static01.nyt.com/images/2021/09/22/opinion/sunday/22FlagsStills-02/22FlagsStills-02-videoSixteenByNineJumbo1600-v2.jpg" alt="" class="img2"> </a>
+           <a class="a2" href="#"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Flag_of_New_Zealand.svg/2560px-Flag_of_New_Zealand.svg.png" alt="" class="img2"> </a>
+           <a href="#" class="a2"><img src="https://image.shutterstock.com/image-vector/vector-image-national-flag-canada-260nw-1934343512.jpg" alt="" class="img2"> </a>
+           <a href="#" class="a2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM13kk91wXvnCldigGd-mWMAeGnsTXf8fstQ&usqp=CAU" alt="" class="img2"> </a>
+           <a href="#" class="a2"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/255px-Flag_of_Europe.svg.png" alt="" class="img2"> </a>
+           <a href="#" class="a2"><img src="https://www.edarabia.com/wp-content/uploads/2019/10/china-flag.jpg" alt="" class="img2"> </a>
+           <a href="#" class="a2"><img src="https://cdn.mos.cms.futurecdn.net/3YLmjAGM2wM5AEiMCwwyi3.jpg" alt="" class="img2"> </a>
+           <a href="#" class="a2"><img src="https://m.media-amazon.com/images/I/61yxAPIR4TL._SX522_.jpg" alt="" class="img2"> </a>
+           <a href="#" class="a2"><img src="http://www.anbg.gov.au/images/flags/misc/semaphore.gif" alt="" class="img2"> </a>
+           <a href="#" class="a2"><img src="https://www.bergerpaints.com/imaginecolours/wp-content/uploads/2018/01/Flag-of-Nepal.png" alt="" class="img2"> </a>
+           <a href="#" class="a2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSexXWCtLCz0oNahjLPD3lCojual1ClqTrSpw&usqp=CAU" alt="" class="img2"> </a>
+           <a href="#" class="a2"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Flag_of_Albania_%281914%E2%80%931920%29.svg/656px-Flag_of_Albania_%281914%E2%80%931920%29.svg.png" alt="" class="img2"> </a>
+           <a href="#" class="a2"><img src="https://www.uritours.com/wp-content/uploads/2020/02/north-korea-flag.jpg" alt="" class="img2"> </a>
+           <a href="#" class="a2"><img src="https://young.scot/media/8214/flag-two.png" alt="" class="img2"> </a>
+           <a href="#" class="a2"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Flag_of_China_%281889%E2%80%931912%29.svg/238px-Flag_of_China_%281889%E2%80%931912%29.svg.png" alt="" class="img2"> </a>
+
+        </div>
+    </div>
+    <div id="top7">
+        <div id="left-top7"><h4> Expedia Partner   </h4></div>
+     
+        <div id="right-top7">
+            <a class="a1" href="#">   Expedia Partner Central</a>
+               
+            <a class="a1" href="#"> Add a property</a>
+            <a class="a1" href="#"> Expedia Partner Solutions API</a>
+            <a class="a1" href="#">  Add an Activity</a>
+           <a class="a1" href="#"> Travel Agencies</a>
+           <a class="a1" href="#">Become an Affiliate</a>
+        </div>
+    </div>
+    <div id="logo"><img src="https://images.trvl-media.com/media/content/expind/images/sg/secure.png" alt=""></div>
+    <div id="ltd">
+        <p class="para"><a class="inc" href=""> © 2022 Expedia, Inc, an Expedia Group Company. /</a> Expedia Asia Holdings Mauritius / BEX Travel Asia Pte Ltd. All rights reserved.</p>
+    </div>
+    <div id="img4">
+        <img src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg" alt="">
+    </div>
+   </div>
+</div>
+
+ 
+</body>
+</html>
+
+<script type="module">
+    import navbar from "./components/navbar.js";
+let nav = document.getElementById("navbar");
+
+nav.innerHTML = navbar();
+
+let car_info = [
+    {
+        type: "Mini",
+        rating: "4  2" ,
+        image: "https://ctimg-fleet.cartrawler.com/honda/fit/primary.png?w=135&auto=compress",
+        rent: "From ₨ 4,500.12",
+       
+    },
+    {
+        type: "Economy",
+        rating: "4  2" ,
+        image: "https://ctimg-fleet.cartrawler.com/honda/fit/primary.png?w=135&auto=compress",
+        rent: "From ₨ 4,500.12",
+    },
+    {
+        type: "Mini",
+        rating: "4  2" ,
+        image: "https://ctimg-fleet.cartrawler.com/honda/fit/primary.png?w=135&auto=compress",
+        rent: "From ₨ 4,500.12",
+    },
+    {
+        type: "Mini",
+        rating: "4  2" ,
+        image: "https://ctimg-fleet.cartrawler.com/honda/fit/primary.png?w=135&auto=compress",
+        rent: "From ₨ 4,500.12",
+    },
+    {
+        type: "Mini",
+        rating: "4  2" ,
+        image: "https://ctimg-fleet.cartrawler.com/honda/fit/primary.png?w=135&auto=compress",
+        rent: "From ₨ 4,500.12",
+    },
+    {
+        type: "Mini",
+        rating: "4  2" ,
+        image: "https://ctimg-fleet.cartrawler.com/honda/fit/primary.png?w=135&auto=compress",
+        rent: "From ₨ 4,500.12",
+    },
+    {
+        type: "Mini",
+        rating: "4  2" ,
+        image: "https://ctimg-fleet.cartrawler.com/honda/fit/primary.png?w=135&auto=compress",
+        rent: "From ₨ 4,500.12",
+    },
+    {
+        type: "Mini",
+        rating: "4  2" ,
+        image: "https://ctimg-fleet.cartrawler.com/honda/fit/primary.png?w=135&auto=compress",
+        rent: "From ₨ 4,500.12",
+    },
+    {
+        type: "Mini",
+        rating: "4  2" ,
+        image: "https://ctimg-fleet.cartrawler.com/honda/fit/primary.png?w=135&auto=compress",
+        rent: "From ₨ 4,500.12",
+    },
+    {
+        type: "Mini",
+        rating: "4  2" ,
+        image: "https://ctimg-fleet.cartrawler.com/honda/fit/primary.png?w=135&auto=compress",
+        rent: "From ₨ 4,500.12",
+    },
+    {
+        type: "Mini",
+        rating: "4  2" ,
+        image: "https://ctimg-fleet.cartrawler.com/honda/fit/primary.png?w=135&auto=compress",
+        rent: "From ₨ 4,500.12",
+    },
+    {
+        type: "Mini",
+        rating: "4  2" ,
+        image: "https://ctimg-fleet.cartrawler.com/honda/fit/primary.png?w=135&auto=compress",
+        rent: "From ₨ 4,500.12",
+    },
+    {
+        type: "Mini",
+        rating: "4  2" ,
+        image: "https://ctimg-fleet.cartrawler.com/honda/fit/primary.png?w=135&auto=compress",
+        rent: "From ₨ 4,500.12",
+    },
+    {
+        type: "Mini",
+        rating: "4  2" ,
+        image: "https://ctimg-fleet.cartrawler.com/honda/fit/primary.png?w=135&auto=compress",
+        rent: "From ₨ 4,500.12",
+    }
+];
+
+car_info.forEach((el) => {
+    let box1 = document.createElement("div");
+    box1.setAttribute("id", "box1")
+    let Type = document.createElement("h3");
+    Type.innerText = el.type;
+   
+
+    
+    let Rating = document.createElement("p");
+    Rating.innerText =  el.rating;
+    let div1 = document.createElement("div");
+    div1.setAttribute("class", "div")
+
+    let Image = document.createElement("img");
+    Image.src = el.image;
+    let Img_div = document.createElement("div");
+    Img_div.setAttribute("class", "i_div");
+
+    let Rent = document.createElement("p");
+    Rent.innerText = el.rent;
+     div1.append(Type, Rating);
+     Img_div.append(Image);
+    box1.append(div1, Img_div, Rent);
+    document.getElementById("car1");
+    car1.append(box1);
+
+});
+
+
+let Car_data = [
+    {  
+        type: "Mini",
+        company: "Mazda Demioor similar",
+        image1: "https://ctimg-fleet.cartrawler.com/honda/fit/primary.png?w=135&auto=compress",
+        facility : "5 | 2 | 3",
+        quality1: "Automatic Transmission",
+        quality2 : "Air Conditioning",
+        show : "Show More",
+        // another box
+
+       
+
+    },
+    {  
+        type: "Mini",
+        company: "Mazda Demioor similar",
+        image1: "https://ctimg-fleet.cartrawler.com/honda/fit/primary.png?w=135&auto=compress",
+        facility : "5 | 2 | 3",
+        quality1: "Automatic Transmission",
+        quality2 : "Air Conditioning",
+        show : "Show More",
+       },
+       {  
+        type: "Mini",
+        company: "Mazda Demioor similar",
+        image1: "https://ctimg-fleet.cartrawler.com/honda/fit/primary.png?w=135&auto=compress",
+        facility : "5 | 2 | 3",
+        quality1: "Automatic Transmission",
+        quality2 : "Air Conditioning",
+        show : "Show More",
+       },
+       {  
+        type: "Mini",
+        company: "Mazda Demioor similar",
+        image1: "https://ctimg-fleet.cartrawler.com/honda/fit/primary.png?w=135&auto=compress",
+        facility : "5 | 2 | 3",
+        quality1: "Automatic Transmission",
+        quality2 : "Air Conditioning",
+        show : "Show More",
+       },
+       {  
+        type: "Mini",
+        company: "Mazda Demioor similar",
+        image1: "https://ctimg-fleet.cartrawler.com/honda/fit/primary.png?w=135&auto=compress",
+        facility : "5 | 2 | 3",
+        quality1: "Automatic Transmission",
+        quality2 : "Air Conditioning",
+        show : "Show More",
+       },
+       {  
+        type: "Mini",
+        company: "Mazda Demioor similar",
+        image1: "https://ctimg-fleet.cartrawler.com/honda/fit/primary.png?w=135&auto=compress",
+        facility : "5 | 2 | 3",
+        quality1: "Automatic Transmission",
+        quality2 : "Air Conditioning",
+        show : "Show More",
+       },
+       {  
+        type: "Mini",
+        company: "Mazda Demioor similar",
+        image1: "https://ctimg-fleet.cartrawler.com/honda/fit/primary.png?w=135&auto=compress",
+        facility : "5 | 2 | 3",
+        quality1: "Automatic Transmission",
+        quality2 : "Air Conditioning",
+        show : "Show More",
+       },
+       {  
+        type: "Mini",
+        company: "Mazda Demioor similar",
+        image1: "https://ctimg-fleet.cartrawler.com/honda/fit/primary.png?w=135&auto=compress",
+        facility : "5 | 2 | 3",
+        quality1: "Automatic Transmission",
+        quality2 : "Air Conditioning",
+        show : "Show More",
+       },
+];
+
+Car_data.forEach((el) =>{
+    let box2 = document.createElement("div");
+    box2.setAttribute("id", "box2")
+    let Type = document.createElement("h3");
+    Type.innerText = el.type;
+    let Company = document.createElement("p");
+    Company.innerText = el.company;
+   
+    let Image1 = document.createElement("img");
+    Image1.src = el.image1;
+    
+    let Facility = document.createElement("h2");
+    Facility.innerText =  el.facility;
+    let Quality1 = document.createElement("p");
+    Quality1.innerText = el.quality1;
+    let Quality2 = document.createElement("p");
+    Quality2.innerText = el.quality2;
+    let Show = document.createElement("h3");
+    Show.setAttribute("class", "show1")
+    Show.innerText = el.show;
+    
+
+    box2.append(Type, Company, Image1, Facility, Quality1, Quality2, Show);
+    
+        
+  let on = document.getElementById("on");
+  on.append(box2)
+  let container1 = document.getElementById("container1");
+    container1.append(on)
+
+});
+
+let car_data2 = [
+    {
+        location : "pick Up Location :",
+        bus:   "Free Shuttle Bus",
+        fuel: "Fuel Policy:",
+        full: "Full to Full",
+        mileage: "Mileage:",
+        unlimit : "Unlimited",
+
+        image3 : "https://ct-supplierimage.imgix.net/car/times.pdf?output=auto&w=62&q=80&dpr=1"
+    },
+    {
+        location : "pick Up Location :",
+        bus:   "Free Shuttle Bus",
+        fuel: "Fuel Policy:",
+        full: "Full to Full",
+        mileage: "Mileage:",
+        unlimit : "Unlimited",
+
+        image3 : "https://ct-supplierimage.imgix.net/car/times.pdf?output=auto&w=62&q=80&dpr=1"
+    },
+    {
+        location : "pick Up Location :",
+        bus:   "Free Shuttle Bus",
+        fuel: "Fuel Policy:",
+        full: "Full to Full",
+        mileage: "Mileage:",
+        unlimit : "Unlimited",
+
+        image3 : "https://ct-supplierimage.imgix.net/car/times.pdf?output=auto&w=62&q=80&dpr=1"
+    },
+    {
+        location : "pick Up Location :",
+        bus:   "Free Shuttle Bus",
+        fuel: "Fuel Policy:",
+        full: "Full to Full",
+        mileage: "Mileage:",
+        unlimit : "Unlimited",
+
+        image3 : "https://ct-supplierimage.imgix.net/car/times.pdf?output=auto&w=62&q=80&dpr=1"
+    },
+    {
+        location : "pick Up Location :",
+        bus:   "Free Shuttle Bus",
+        fuel: "Fuel Policy:",
+        full: "Full to Full",
+        mileage: "Mileage:",
+        unlimit : "Unlimited",
+
+        image3 : "https://ct-supplierimage.imgix.net/car/times.pdf?output=auto&w=62&q=80&dpr=1"
+    },
+    {
+        location : "pick Up Location :",
+        bus:   "Free Shuttle Bus",
+        fuel: "Fuel Policy:",
+        full: "Full to Full",
+        mileage: "Mileage:",
+        unlimit : "Unlimited",
+
+        image3 : "https://ct-supplierimage.imgix.net/car/times.pdf?output=auto&w=62&q=80&dpr=1"
+    },
+    {
+        location : "pick Up Location :",
+        bus:   "Free Shuttle Bus",
+        fuel: "Fuel Policy:",
+        full: "Full to Full",
+        mileage: "Mileage:",
+        unlimit : "Unlimited",
+
+        image3 : "https://ct-supplierimage.imgix.net/car/times.pdf?output=auto&w=62&q=80&dpr=1"
+    },
+    {
+        location : "pick Up Location :",
+        bus:   "Free Shuttle Bus",
+        fuel: "Fuel Policy:",
+        full: "Full to Full",
+        mileage: "Mileage:",
+        unlimit : "Unlimited",
+
+        image3 : "https://ct-supplierimage.imgix.net/car/times.pdf?output=auto&w=62&q=80&dpr=1"
+    },
+];
+
+car_data2.forEach((el) =>{
+    let box3 = document.createElement("div");
+    box3.setAttribute("id", "box3");
+    
+    let Location = document.createElement("p");
+    let Bus = document.createElement("h4");
+    let Fuel = document.createElement("p");
+    let Full = document.createElement("h4");
+    let Mileage = document.createElement("p");
+    let Unlimit = document.createElement("h4");
+    
+    Fuel.setAttribute("class", "f");
+    Mileage.setAttribute("class", "f");
+
+     Location.innerText = el.location;
+     Bus.innerText = el.bus;
+     Fuel.innerText = el.fuel;
+     Full.innerText = el.full;
+     Mileage.innerText = el.mileage;
+     Unlimit.innerText = el.unlimit;
+
+
+     let Image3 = document.createElement("img");
+     Image3.setAttribute("class", "i3");
+    Image3.src = el.image3;
+
+    box3.append(Location, Bus, Fuel, Full, Mileage, Unlimit, Image3);
+   let two = document.getElementById("tw");
+   two.append(box3);
+   let container1 = document.getElementById("container1");
+    container1.append(two);
+});
+
+let car_data3 = [
+  {
+    free : "Included for Free",
+    collision : "Collision Damage Waiver",
+    protection : "Theft Protection",
+    third : "Third Party Protection",
+    cancel : "Cancellation",
+    amet : "Amendments",
+
+    info : "Important Information",
+  },
+  {
+    free : "Included for Free",
+    collision : "Collision Damage Waiver",
+    protection : "Theft Protection",
+    third : "Third Party Protection",
+    cancel : "Cancellation",
+    amet : "Amendments",
+
+    info : "Important Information",
+  },
+  {
+    free : "Included for Free",
+    collision : "Collision Damage Waiver",
+    protection : "Theft Protection",
+    third : "Third Party Protection",
+    cancel : "Cancellation",
+    amet : "Amendments",
+
+    info : "Important Information",
+  },
+  {
+    free : "Included for Free",
+    collision : "Collision Damage Waiver",
+    protection : "Theft Protection",
+    third : "Third Party Protection",
+    cancel : "Cancellation",
+    amet : "Amendments",
+
+    info : "Important Information",
+  },
+  {
+    free : "Included for Free",
+    collision : "Collision Damage Waiver",
+    protection : "Theft Protection",
+    third : "Third Party Protection",
+    cancel : "Cancellation",
+    amet : "Amendments",
+
+    info : "Important Information",
+  },
+  {
+    free : "Included for Free",
+    collision : "Collision Damage Waiver",
+    protection : "Theft Protection",
+    third : "Third Party Protection",
+    cancel : "Cancellation",
+    amet : "Amendments",
+
+    info : "Important Information",
+  },
+  {
+    free : "Included for Free",
+    collision : "Collision Damage Waiver",
+    protection : "Theft Protection",
+    third : "Third Party Protection",
+    cancel : "Cancellation",
+    amet : "Amendments",
+
+    info : "Important Information",
+  },
+  {
+    free : "Included for Free",
+    collision : "Collision Damage Waiver",
+    protection : "Theft Protection",
+    third : "Third Party Protection",
+    cancel : "Cancellation",
+    amet : "Amendments",
+
+    info : "Important Information",
+  },
+];
+
+car_data3.forEach((el)=>{
+    let box5 = document.createElement("div");
+    box5.setAttribute("id", "box5");
+
+    let Free = document.createElement("h4");
+    let Collision = document.createElement("p");
+    let Protection = document.createElement("p");
+    let Third = document.createElement("p");
+    let Cancel = document.createElement("p");
+    let Amet = document.createElement("p");
+    let Info = document.createElement("button");
+    Info.setAttribute("class", "btn");
+  Collision.setAttribute("class", "collision")
+    Free.innerText = el.free;
+    Collision.innerText = el.collision;
+    Protection.innerText = el.protection;
+    Third.innerText = el.third;
+    Cancel.innerText = el.cancel;
+    Info.innerText = el.info;
+
+    box5.append(Free, Collision, Protection, Third, Cancel, Amet, Info);
+   let thr = document.getElementById("thr");
+   thr.append(box5);
+   let container1 = document.getElementById("container1");
+    container1.append(thr);
+});
+
+ let car_data4 = [
+    {
+        rs : "₨ 2,527.26",
+        sel : "Select",
+        email : "Email Quote",
+    },
+    {
+        rs : "₨ 2,527.26",
+        sel : "Select",
+        email : "Email Quote",
+    },
+    {
+        rs : "₨ 2,527.26",
+        sel : "Select",
+        email : "Email Quote",
+    },
+    {
+        rs : "₨ 2,527.26",
+        sel : "Select",
+        email : "Email Quote",
+    },
+    {
+        rs : "₨ 2,527.26",
+        sel : "Select",
+        email : "Email Quote",
+    },
+    {
+        rs : "₨ 2,527.26",
+        sel : "Select",
+        email : "Email Quote",
+    },
+    {
+        rs : "₨ 2,527.26",
+        sel : "Select",
+        email : "Email Quote",
+    },
+    {
+        rs : "₨ 2,527.26",
+        sel : "Select",
+        email : "Email Quote",
+    },
+];
+
+car_data4.forEach((el) =>{
+    let box6 = document.createElement("div");
+    box6.setAttribute("id", "box6");
+
+    let Rs = document.createElement("h1");
+    Rs.innerText = el.rs;
+
+    let Sel = document.createElement("button");
+    Sel.setAttribute("class", "bt1");
+    Sel.addEventListener("click", function(){
+        Select(el);
+    })
+    Sel.innerText = el.sel;
+    let Email = document.createElement("button");
+    Email.setAttribute("class", "bt2");
+    Email.innerText = el.email;
+    box6.append(Rs, Sel, Email);
+    let fo = document.getElementById("for");
+  
+  fo.append(box6);
+  let container1 = document.getElementById("container1");
+    container1.append(fo);
+
+
+});
+
+function Select(el){
+window.location.href = "car_book.html"
+}
+
+select(el)
+</script>
