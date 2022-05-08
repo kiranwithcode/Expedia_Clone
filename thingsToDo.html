@@ -50,7 +50,7 @@
             <input type="date" placeholder="check out" class="input-out1"/>
         </div>
         </div>
-        <a href="./vishal/thingmain.html"><button id="search1">Search</button></a> 
+        <button id="search1">Search</button>
         </div>
         
      </div>
@@ -184,4 +184,19 @@
        import navbar from "./components/navbar.js";
        let header = document.getElementById("header");
        header.innerHTML = navbar();
+
+       document.getElementById("search1").addEventListener("click",btnfun)
+
+       function btnfun(){
+          let input=document.querySelector(".input-out").value
+          if(input==="nagasaki" || input==="Nagasaki")
+          {
+              window.location.href="./vishal/thingmain.html"
+          }
+          else{
+              alert("  Sorry,This city is not available ")
+          }
+       }
+
+
 </script>
