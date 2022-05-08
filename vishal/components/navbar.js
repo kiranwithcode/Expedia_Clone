@@ -23,7 +23,7 @@ function navbar(){
             <li><a href="">English</a></li>
             <li><a href="">Support</a></li>
             <li><a href="/Trips/trips.html">Trips</a></li>
-            <li><a href="./signin/signin.html">Sign in</a></li>
+            <li><a href="../signin/signin.html">Sign in</a></li>
         </div>
     </ul>
 </nav>
