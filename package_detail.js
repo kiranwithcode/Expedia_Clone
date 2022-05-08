@@ -179,7 +179,7 @@ function bookRoom(){
 
     localStorage.setItem("perInfo",JSON.stringify(personalInfo));
     console.log(personalInfo);
-    if(inDate&&outDate&&room&&person)
+    if(inDate && outDate && room && person)
     {
          window.open("package_payment.html");
     }
