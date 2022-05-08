@@ -1,4 +1,3 @@
-
 //hotel data 
 function hotel(u,n,r,p,c,pt)
 {

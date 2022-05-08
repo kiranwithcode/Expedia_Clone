@@ -1,14 +1,9 @@
-body{
-     background-color: #f8f5f4;
-}
 #searchBar
 {
      display: flex;
      /*justify-content: space-around; */
-     width: 85%;
-     margin: auto;
-     margin-bottom: 30px;
-     margin-top: 60px;
+     width: 100%;
+     margin: 50px;
      gap: 30px;
 }
 #search,#inDate,#outDate,#room,#person
@@ -17,46 +12,29 @@ body{
 }
 .box1
 {
-     width: 100%;
      display: flex;
-     justify-content: space-between;
-     margin-bottom: 20px;  
-     background-color: #fff;
-     border-radius: 10px;
-}
-.price1{
-     margin-right: 10px;
+     justify-content: space-around;
 }
 .image
 {
-     height: 210px;
+     height: 200px;
      width: 300px;
-     margin-left: 0;
-     /* position: fixed; */
-     /* margin-right: 30%; */
-     border-top-left-radius: 10px;
-     border-bottom-left-radius: 10px;
+     margin: 40px;
+     margin-left: 15%;
+     border-radius: 10px;
 }
 #container
 {
      display: flex;
      width: 85%;
      margin: auto;
-     gap: 10px;
 }
-#mainBox{
-     width: 25%;
-}
-#hotel{
-     width: 75%;
-}
-/* .box2 */
-/* { */
-     /* margin-top: 40px; */
+.box2
+{
+     margin-top: 40px;
      /* text-align: center;  */
       /* line-height: 20%; */
-      
-/* } */
+}
 .box4
 {
      margin-top: 30px;
