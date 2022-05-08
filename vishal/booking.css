@@ -1,0 +1,297 @@
+body{
+    background-color: #f8f5f4;
+    padding: 0;
+    margin: 0;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px 150px ;
+}
+#navbar i{
+    padding: 10px;
+}
+.top-review{
+    width: 80%;
+    margin: auto;
+}
+.top-review .top-review-head{
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.834);
+}
+.top-review .p-green{
+    color: green;
+    font-size: 18px;
+}
+.main{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    gap: 10px;
+}
+.main .left{
+    width: 65%;
+    /* border:  1px solid black; */
+    /* margin-bottom: 50px; */
+}
+.main .left .sign-in{
+    background-color: #fff;
+    padding: 18px;
+    /* border-radius: 10px; */
+    margin-bottom: 20px;
+}
+.main .left .sign-in i{
+    /* padding: 0px 20px; */
+    margin-right: 10px;
+    font-size: 20px;
+}
+.main .right{
+    width: 35%;
+    /* border:  1px solid black; */
+}
+.room-details{
+   background-color: #fff;
+   padding: 18px;
+
+}
+.room-details span i{
+    /* padding: 20px; */
+    font-size: 20px;
+    margin-right: 10px;
+}
+.room-details .facility span{
+    color: green;
+}
+.room-details .facility span i{
+    font-size: 10px;
+}
+#form {
+    display: grid;
+    grid-template-rows: 20px 30px 20px 30px 20px 30px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 5px;
+  
+    grid-template-areas:
+      "l l . . z z . . . . . ."
+      "f f f . s s s . . . . ."
+      "m m m . . . . . . . . ."
+      "c c n n n n n . . . . ."
+      "cb cl cl cl cl cl . . . . . ."
+      "sub . . . . . . . . . . .";
+  }
+  
+  .label_first {
+    grid-area: l;
+    font-weight: bold;
+    /* font-size: large; */
+  }
+  .label_second {
+    grid-area: z;
+    font-weight: bold;
+    /* font-size: large; */
+  }
+  #firstname {
+    grid-area: f;
+    font-weight: 300;
+  }
+  #surname {
+    grid-area: s;
+    font-weight: 300;
+  }
+  .mob_label {
+    grid-area: m;
+    font-weight: bold;
+  }
+  #country {
+    grid-area: c;
+  }
+  #output {
+    grid-area: n;
+  }
+  #box {
+    grid-area: cb;
+  }
+  .charge_label {
+    grid-area: cl;
+  }
+  #submit {
+    grid-area: sub;
+    /* font-weight: bold; */
+    margin-top: 5px;
+    /* background-color: #8a6; */
+    border-radius: 3px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    color: blue;
+  }
+  /* payment section*/
+  .payment {
+    border: 1px solid white;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    /* width: 60%; */
+    /* margin-right: 10px; */
+  }
+  .secureInfo {
+    display: flex;
+  }
+  .secureInfo div {
+    margin-right: 20px;
+  }
+  .secureInfo div:nth-child(2),
+  .secureInfo div:nth-child(3) {
+    color: #8a6;
+  }
+  /*here i use !important here */
+  .fa-check {
+    color: green !important;
+  }
+  .cardinfo button {
+    border: none;
+  }
+  .cardinfo button:nth-child(2) {
+    color: #28c;
+    margin-left: 5px;
+  }
+  .cardicon {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  .cardicon i {
+    margin: 5px;
+  }
+  #cardform {
+    color: #444;
+  }
+  #cardform > label {
+    color: #444;
+  }
+  #cardform input {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #777;
+    margin-top: 10px;
+  }
+  #cardform #cardname,
+  #cardform #cardnumber {
+    padding: 5px;
+  }
+  #expYear,
+  #expMonth {
+    margin-bottom: 15px;
+    margin-right: 10px;
+    padding: 5px;
+    font-weight: bold;
+  }
+  #scode {
+    padding: 5px;
+  }
+
+  /* paymentinfo flexing */
+
+  /* manageBooking section */
+  .manageBooking {
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+    /* width: 57.5%; */
+  }
+  
+  #final_email,
+  .conf_email p {
+    color: #444;
+  }
+  #final_email label {
+    font-size: large;
+    color: #444;
+  }
+  #final_inp_email {
+    padding: 5px;
+  }
+  #box1 {
+    margin-top: 15px;
+  }
+  .book_info_list li {
+    color: #444;
+  }
+  #complete {
+    color: #444;
+    /* width: 57.5%; */
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  #complete button {
+    background-color: #fc4;
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+  }
+  #complete button:hover{
+      background-color: rgb(253, 187, 6);
+  }
+  #complete .protection_security_info {
+    display: flex;
+    margin-top: 10px;
+  }
+  #complete .protection_security_info p {
+    margin-top: 0px;
+    margin-left: 10px;
+  }
+  .right .box {
+    border-radius: 10px;
+    background-color: #fff;
+  }
+.right .box img{
+  width: 100%;
+  height: 200px;
+  border-radius: 6px;
+}
+.name{
+  margin-top: -60px;
+  padding: 10px;
+  color: white;
+}
+.refund{
+  color: green;
+}
+.priceDiv{
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+}
+.roomPriceDiv{
+  display: flex;
+  justify-content: space-between;
+}
+.roomPriceDiv p{
+    font-size: 20px;
+}
+.taxPriceDiv{
+  display: flex;
+  justify-content: space-between;
+}
+.taxPriceDiv p{
+  font-size: 20px;
+}
+.totalDiv{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.rating, .guest, .room, .refund, .checkIn, .checkOut, .oneNight{
+  padding-left: 10px;
+}
+.lastpara{
+  font-size: 12px;
+}

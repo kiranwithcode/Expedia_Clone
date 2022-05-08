@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous">
+    </script>
+
+    <title>Document</title>
+</head>
+<style>
+nav{
+    background: white;
+    padding: 20px 60px 10px 120px;
+    border: 1px solid #cecece;
+    border-left: none;
+    border-right: none;
+}
+#left{
+    display: flex;
+    flex: 1;
+}
+#travel1{
+    margin-left: 30px;
+    border: none;
+    font-size: 0.875rem;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+nav ul div.items{
+    padding: 0px 25px;
+    display: inline-flex;
+}
+nav ul div.items a{
+    text-decoration: none;
+    padding: 0 15px;
+    color: #343b53;
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+nav ul div.items a:hover{
+    color: #3662d8;
+}
+    /* ------------------------------------------------- */
+    #topdiv {
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
+        
+    }
+
+    #sub {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #sub>div>a {
+        font-size: 17px;
+
+    }
+
+    #x {
+        display: flex;
+
+        width: 150px;
+        justify-content: space-between;
+
+    }
+
+    #x>p {
+        font-size: 20px;
+        color: blue;
+        cursor: pointer;
+    }
+
+    #y {
+        margin-top: 15px;
+    }
+
+    #container {
+        display: flex;
+
+        height: 506px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #container1 {
+
+        width: 70%;
+        height: 100%;
+    }
+
+    #container1>div>img {
+        height: 506px;
+        width: 100%;
+    }
+
+    #container2 {
+
+        width: 330px;
+        margin-left: 20px;
+    }
+
+    #container2>div>img {
+        width: 100%;
+        height: 250px;
+    }
+    #overview{
+        display: flex;
+        border-bottom: 1px solid gray;
+       height: 50px;
+    }
+    #overview>p{
+       margin-left: 20px;
+       cursor: pointer;
+    }
+    #overview>p:hover{
+        color: blue;
+        border-bottom: 3px solid blue;
+        padding-bottom: 32px;
+
+    }
+  
+    #main{
+        display: flex;
+        width: 90%;
+      
+        height: 430px;
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #maintitle{
+       
+        width: 400px;
+        height: 100%;
+        
+    }
+#subtitle{
+    
+    width: 650px;
+    height: 100%;
+    margin-left: 60px;
+}
+#maintitle>div{
+    margin-left: 10px;
+}
+#maintitle>div>p{
+    margin-top: -15px;
+}
+#maintitle>div>h2{
+    margin-top: 60px;
+}
+#feature{
+    display: flex;
+    justify-content: space-around;
+}
+#mask{
+    margin-left: 10px;
+}
+#clean{
+    margin-top: 50px;
+}
+#over{
+    margin-top: -15px;
+}
+#check{
+    width: 80%;
+    margin: auto;
+    height: 480px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+#check>h1{
+    border-bottom: 1px solid gray;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+/* ----------------------------------------------------- */
+#mainbox{
+    display: flex;
+    width: 95%;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    height: 350px;
+    margin: auto;
+gap: 20px;
+
+}
+#box1{
+    width: 350px;
+    height: 300px;
+    
+    margin-top: 20px;
+}
+#box2{
+    width: 350px;
+    height: 300px;
+    
+    margin-top: 20px;
+}
+#box3{
+    width: 380px;
+    height: 300px;
+   
+    margin-top: 20px;
+}
+/* --------------------------------------------- */
+#num{
+    height: 35px;
+    width: 200px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#travel{
+    margin-top: 30px;
+    font-size: 20px;
+}
+#price{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+#tot{
+    margin-right: 10px;
+}
+#total{
+    display: flex;
+    justify-content: space-between;
+}
+#tp{
+    margin-right: 10px;
+}
+.btn{
+    background-color: blue;
+    color: white;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* footer-------------------------------- */
+/* Stay in the know with the Expedia app */
+
+.qr-section {
+display: grid;
+grid-template-columns: 35% 50% 15%;
+width: 80%;
+margin: auto;
+margin-bottom: 50px;
+margin-top: 40px;
+border: 1px solid #465280;
+border-radius: 10px;
+align-items: center;
+padding: 2px;
+}
+
+.qr-content {
+padding: 10px;
+}
+
+.qr-title {
+font-size: 1.5rem;
+color: #001959;
+font-weight: 700;
+}
+
+.qr-sub {
+color: #465280;
+font-size: 15px;
+
+}
+
+.qr-sub-title {
+font-size: 1.2rem;
+color: #001959;
+font-weight: 700;
+margin-top: 20px;
+margin-bottom: 10px;
+}
+
+.qr-input {
+width: 150px;
+height: 40px;
+padding-left: 5px;
+outline: none;
+border-radius: 7px;
+border: 1px solid #465280;
+}
+.qr-input:focus {
+border: 2px solid #005aeb;
+}
+.qr-button {
+background-color: #005aeb;
+color: white;
+border: none;
+}
+.qr-end {
+font-size: 10px;
+margin-left: 2px;
+margin-top: 5px;
+}
+        /* .end-tag-line */
+.end-tag-line {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-weight: 500;
+margin-top: 50px;
+}
+.end-tag-line > a {
+margin-top: -3px;
+color: #005aeb;
+}
+/* footer  */
+
+.footer {
+display: flex;
+flex-direction: column;
+margin-top: 60px;
+padding-bottom: 100px;
+}
+
+.footer > .links {
+display: flex;
+flex-direction: row;
+font-size: 13px;
+justify-content: space-around;
+width: 80%;
+margin: auto;
+}
+
+.footer > .end-line {
+font-size: 13px;
+text-align: center;
+max-width: 480px;
+align-self: center;
+line-height: 15px;
+color: #465280;
+margin-top: 40px;
+}
+
+.footer > img {
+width: 150px;
+margin: auto;
+margin-top: 20px;
+}
+.links>a{
+font-size: 16px;
+}
+
+</style>
+
+<body>
+    <header id="header"></header>
+    <div id="topdiv">
+        <div id="sub">
+            <div id="y"><a href="thingmain.html"> <i class="fa-solid fa-arrow-left"></i> See all activities</a></div>
+            <div id="x">
+                <p><i class="fa-solid fa-share-nodes"></i> Share</p>
+                <p>Save</p>
+            </div>
+        </div>
+        <div id="container">
+            <div id="container1">
+
+            </div>
+            <div id="container2"></div>
+        </div>
+        <!-- ----------------------------------- -->
+        <div id="overview">
+            <p> <a href="#" style="text-decoration: none;">Overview</a> </p>
+            <p> <a href="#check" style="text-decoration: none;">Check availability</a> </p>
+           <p> <a href="" style="text-decoration: none;">About this activity</a> </p>
+           <p> <a href="" style="text-decoration: none;">Cleanline & safety</a> </p>
+           <p> <a href="" style="text-decoration: none;">Location</a> </p>
+           
+           
+        </div>
+        <!-- -------------------------------------- -->
+        <div id="main">
+            <div id="maintitle">
+                
+            </div>
+            <div id="subtitle">
+              <h3>Features</h3>
+              <div id="feature">
+               <div><i class="fa-regular fa-mobile-screen-button"></i> Mobile voucher</div>
+               <div><i class="fa-regular fa-calendar-check">   instant confirmation</i></div>
+               <div><i class="fa-regular fa-person-shelter"></i>  Cleanline and Safety</div>
+              </div>
+              <h3 id="clean">Cleaning and safety practices</h3>
+              <div id="mask"><i class="fa-solid fa-head-side-mask"></i> Masks required</div>
+               
+              <h3>Overview</h3>
+              <div id="over">
+              <p>
+                The Japanese city of Nagasaki stands as a permanent reminder of the horrors of nuclear bombs and their destructive power. This tour is a powerful journey, a once in a lifetime experience of a dark period of world history that hopefully will never be repeated.Perfectly suited for discovery on foot, our self-guided audio tour allows you to set the pace and explore at your leisure as you uncover the stories of this amazing city.To discover this fascinating city in your own time and at your own pace just download this self-guided audio tour, pop in your headphones, open the map that comes with your download and start walking.On this tour you will see the serenity of Glover Gardens and learn of Nagasaki’s tragic history.Please note that this tour is only available in English.
+              </p>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------- -->
+        <div id="check">
+          
+       <h1>Check availablility</h1>
+       <div id="mainbox">
+    <div id="box1">
+       <div id="name1">
+          </div>
+          <i class="fa-solid fa-circle-info" style="margin-left: 10px; margin-top: 10px;"></i> <label for="#">Non-refundable</label><br>
+          <i class="fa-solid fa-clock" style="margin-left: 10px; margin-top: 10px;"></i> <label for="#">3h</label><br>
+          <i class="fa-solid fa-headphones" style="margin-left: 10px; margin-top: 10px;"></i> <label for="#">English</label>
+        </div>
+    
+         <div id="box2">
+
+            <label for="#" id="travel"> Travellers:</label>
+           <select name="#" id="num" onchange="number()">
+        <option value="1"> Number of persons</option>
+        <option value="1">1 adult</option>
+        <option value="2">2 adult</option>
+        <option value="3">3 adult</option>
+        <option value="4">4 adult</option>
+        <option value="5">5 adult</option>
+        
+        </select><br>
+        <i class="fa-solid fa-language" style="margin-left: 10px; margin-top: 10px;"></i> <label for="#" style="font-size:18px ;  margin-top: 10px;">Languages Available: English </label><br>
+        <i class="fa-solid fa-clock" style="margin-left: 10px;  margin-top: 10px;"></i> <label for="#" style="font-size:18px ;  margin-top: 10px;"> Starting time: 9:00</label>
+         </div>
+         <div id="box3">
+            <h4> Price details</h4>
+            <div id="price">
+            <div id="mult"></div>
+            <div id="tot"></div>
+            
+            </div>
+            <hr>
+            <div id="total">
+            <h3>Total</h3>
+            <div id="tp">
+                
+            </div>
+        </div>
+        <h4 style="margin-left: 10px;">This activity is non-refundable</h4>
+        <p style="margin-left: 10px;">If you choose to change or cancel this booking you will not be refunded any of the payment</p>
+        <butto class="btn" style="margin-left: 350px;" > Book</button>
+    </div>
+  </div>
+  </div>
+<!-- footer--------------- -->
+
+ <!-- stay in the know -->
+ <div class="qr-section">
+    <img
+      src="https://a.travel-assets.com/mad-service/header/takeover/expedia_marquee_refresh.jpg"
+      alt="mobile"
+      width="100%"
+    />
+    <div class="qr-content">
+      <div class="qr-title">Stay in the know with the Expedia app</div>
+
+      <div class="qr-sub">
+        Get real-time notifications, view your trip details, and access
+        mobile-only deals.
+      </div>
+      <div class="qr-sub-title">Text yourself a download link</div>
+      <input
+        class="qr-input"
+        type="text"
+        value=""
+        placeholder="Country code"
+      />
+      <input
+        class="qr-input"
+        type="text"
+        value=""
+        placeholder="Mobile number"
+      />
+      <a href="https://play.google.com/store/apps/details?id=com.expedia.bookings&hl=en_IN&gl=US"><input class="qr-input qr-button" type="button" value="Get the app"  /></a> 
+      <p class="qr-end">
+        By providing your number, you agree to receive a one-time automated
+        text message with a link to get the app. Standard text message rates
+        may apply.
+      </p>
+    </div>
+    <img
+      src="https://a.travel-assets.com/mad-service/footer/marquee/qrcode/qr_code_1.png"
+      alt="qr-code"
+      width="100%"
+    />
+  </div>
+  <div class="end-tag-line">
+    <p>Explore a world of travel with Expedia</p>
+    <a href="thingmain.html"><p>See our travel options</p></a>
+  </div>
+<!-- footer -->
+<div class="footer">
+<div class="links">
+  <a href="" class="link">About Expedia</a>
+  <a href="" class="link">Jobs</a>
+  <a href="" class="link">Investor Relations</a>
+  <a href="" class="link">Advertising</a>
+  <a href="" class="link">Newsroom</a>
+  <a href="" class="link">About Our Ads</a>
+  <a href="" class="link">Privacy Policy</a>
+  <a href="" class="link">Terms of Use</a>
+  <a href="" class="link">Site Map</a>
+  <a href="" class="link">Accessibility</a>
+  <a href="" class="link">Support</a>
+  <a href="" class="link">Do Not Sell My Personal Information</a>
+</div>
+
+<div class="end-line">
+  Expedia, Inc. is not responsible for content on external Web sites. ©
+  2021 Expedia, Inc, an Expedia Group Company. All rights reserved.
+</div>
+
+<img
+  src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg"
+  alt=""
+/>
+</div>
+
+
+
+
+
+   
+</body>
+
+</html>
+<script>
+    let details = JSON.parse(localStorage.getItem("detail"))
+
+    let container1 = document.getElementById("container1")
+    let div = document.createElement("div")
+    let img = document.createElement("img")
+    img.src = details.imgurl;
+    div.append(img)
+    container1.append(div)
+    let container2 = document.getElementById("container2")
+    let div1 = document.createElement("div")
+    let img1 = document.createElement("img")
+    img1.src = details.newimg.img1;
+    let img2 = document.createElement("img")
+    img2.src = details.newimg.img2;
+    div1.append(img1, img2)
+    container2.append(div1)
+// -----------------------------------
+
+let maintitle=document.getElementById("maintitle")
+let div2=document.createElement("div")
+let h1=document.createElement("h1")
+h1.innerText=details.name;
+let p= document.createElement("p")
+p.innerText="By Citywalksz Ltd"
+let price=document.createElement("h2")
+price.innerText="S$"+details.price;
+let para=document.createElement("p")
+para.innerText="per adult "
+let button=document.createElement("button")
+button.innerText="See Ticket"
+button.style.backgroundColor="blue"
+button.style.color="white"
+button.style.padding="5px"
+button.style.borderRadius="5px"
+div2.append(h1,p,price,para,button)
+maintitle.append(div2)
+// ---------------------------------------------
+let name1=document.getElementById("name1")
+let pa=document.createElement("h2")
+pa.innerText=details.name;
+name1.append(pa)
+// -----------------------------------------
+let multi= document.getElementById("mult")
+
+multi.innerText="S$"+details.price+ " "+"x"+" "+" 1 adult"
+
+let tot=document.getElementById("tot")
+tot.innerText="S$"+(details.price *1)
+
+function number(){
+    let num= document.getElementById("num").value
+//   localStorage.setItem("person",num)
+    
+    multi.innerText="S$"+details.price+ " "+"x"+" "+num+" "+"adult"
+    tot.innerText="S$"+(details.price *num)
+    tpo.innerText=tot.innerHTML
+}
+
+let tp=document.getElementById("tp")
+let tpo=document.createElement("h2")
+tpo.innerText=tot.innerHTML
+tp.append(tpo)
+document.querySelector(".btn").addEventListener("click",myfun)
+
+function myfun(){
+    window.location.href="booking.html"
+}
+</script>
+<script type="module">
+    import navbar from "./components/navbar.js";
+   let header = document.getElementById("header");
+   header.innerHTML = navbar();
+</script>
