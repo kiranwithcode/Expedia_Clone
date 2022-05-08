@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #f8f5f4;
+        }
+        #main_box{
+            /* border: 1px solid blue; */
+            height: 300px;
+            width: 95%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px;
+        }
+        #main_box > div{
+            /* background-color: aqua; */
+        }
+        #box1{
+            height: 500px;
+           width: 105%;
+        }
+        #box2{
+            height: 200px;
+            width: 90%;
+            margin-left: 50px;
+        }
+        #box1{
+           display: grid;
+           gap: 20px;
+        }
+        #box1 >div{
+            /* background-color: white; */
+        }
+        .co1{
+            color: white;
+            height:70px;
+            background-color:#343b53 ;
+            border-radius: 10px;
+           padding: 30px;
+           box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+        }
+        .co2{
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            padding-left: 10px;
+        }
+        
+        .co3{
+            
+            padding-left: 10px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        }
+        .co4{
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            padding-left: 10px;
+        }
+        .co5{
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            padding-left: 10px;
+        }
+
+        img{
+            height: 40px;
+            width: 40px;
+        }
+        #spi{
+         margin-left: 30px;
+        }
+        .ch{
+            margin-left: 30px;
+        }
+        #box2 {
+
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: auto;
+          
+        }
+        #box2 >div{
+            background-color: white
+
+        }
+        button{
+            margin: auto;
+            height: 60px;
+            width: 80%;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            background-color: blue;
+            margin-top: 20px;
+        }
+        .tr{
+            padding-left: 5px;
+        }
+        .tr1{
+          padding-top: 51px;
+        }
+        a{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+        <p id="spi">SpiceJet·DEL -> PAT  > Go First·PAT -> DEL > <b>Review your trip</b> </p>
+        <p class="ch"><a href="">Change flight</a></p>
+    <div id="main_box">
+        <div id="box1">
+            <div class="co1">
+                <p>Check COVID-19 restrictions.</p>
+                <p><a href=""> Find out more  </a>  <span> <a href="">   Dismiss</a>  </span></p>
+            </div>
+            <div class="co2">
+               <img src=" https://images.trvl-media.com/media/content/expus/graphics/flights/no_change_fee.svg" />
+                <h3>Stay flexible with no change fees</h3>
+                <p>We recommend booking a flight with no change fees in case your plans change.</p>
+           
+            </div>
+            <div class="co3">
+                <h2>Delhi to Patna</h2>
+                <p><img src="https://images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/SG_sq.svg" /> SpiceJet • Fri, 20 May</p>
+                    <p>06:25 - 7:30</p>
+                    <p>1h 5m (0 stop)</p>
+                    <p>1h 05m in Patna (VNS)</p>
+                    <p><a href="">Show details</a></p>
+                  <hr>
+                    <p>Fare: Spicesaver</p>
+                    <p>Your selection applies to this flight only</p>
+                    <p><a href="">Show details</a></p>
+                    <hr>
+                    <p><a href="">Change flight</a></p>
+            </div>
+            <div class="co3">
+            <h1>Patna to Delhi</h1>
+            <p><img src="https://images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/G8_sq.svg"/> First • Sat, 21 May</p>
+            <p>20:05 - Patna</p> 
+            <p>1h 50m flight</p>
+            <p>Go First 150</p>
+            <p>Economy (R)</p>
+            <br>
+            <p>Arrival21:55 - Delhi</p>
+            <p>Indira Gandhi Intl. (DEL)</p>
+            <p><a href="">Hide details</a></p>
+            <hr>
+            <p>Fare: Gofirst</p>
+            <p>Your selection applies to this flight only</p>
+            <p><a href="">Show details</a></p>
+            <hr>
+            <p><a href="">Change flight</a></p>
+        </div>
+
+        <div class="co4">
+            <h3>Cleaning and Safety Practices</h3>
+        </div>
+            <div class="co5">
+                <p>Your flight has separate tickets<br>
+                    Your flight is a combination of two one-way fares, each subject to its own rules and restrictions. <br>If one of your flights is changed or cancelled, it will not automatically alter the other flight.<br> Changes to the other flight may incur a charge.</p>
+            </div>
+            
+        </div>
+         <!-- <h2>Price summary</h2> -->
+        <div id="box2">
+           
+            <div class="tr">
+                <h2>Price summary</h2>
+            <p>Traveller 1: Adult</p>
+            <p>Flight</p>
+            <p>Texes and fees</p>
+            <hr>
+            <h3>Trip total</h3>
+            <p>Rates are quoted in Indian rupees</p>
+            </div>
+            <div class="tr1">
+                <p>Rs12,112.00</p>
+                <p>Rs10,319.00</p>
+                <p>Rs1,793.00</p>
+                <hr>
+                <h2>	Rs12,112.00</h2>
+            </div>
+            <a href="paymentss.html"><button>Check Out</button></a>
+        </div>
+       
+    </div>
+
+</body>
+</html>

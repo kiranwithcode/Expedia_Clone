@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            border: 1px solid #c5c7ce;
+            height: 350px;
+            width: 90%;
+            margin: auto;
+        }
+        #main{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        #main div{
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            cursor: pointer;
+        }
+        #a1{
+            margin-top: 10px;
+            padding: 10px;
+            height: 80%;
+            width: 170%;
+            border: none;
+            background-color: white;
+            cursor: pointer;
+        }
+        
+        #b{
+            margin-left: 5rem;
+            margin-top: 10px;
+            padding: 10px;
+            height: 80%;
+            width: 170%;
+            border: none;
+            background-color: white;
+            cursor: pointer;
+
+        }
+        #c{
+            margin-left: 4rem;
+            margin-top: 10px;
+            padding: 10px;
+            height: 80%;
+            width: 170%;
+            border: none;
+            background-color: white;
+            cursor: pointer;
+        }
+        #a1:hover{
+            color: #3667da;
+           border-radius: 5px;
+           height: 80%;
+           width: 170%;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        }
+        #b:hover{
+            color: #3667da;
+            border-radius: 5px;
+            height: 80%;
+            width: 170%;
+            display: inline;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        }
+        #c:hover{
+            color: #3667da;
+            border-radius: 5px;
+            height: 80%;
+            width: 170%;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        }
+        #main2{
+            /* border: 1px solid black; */
+            padding-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+
+        }
+        #main3{
+            /* border: 1px solid black; */
+            padding-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+
+        }
+       #lev{
+           border-radius: 5px;
+           height: 60px;
+           width: 24rem;
+           background-color: white;
+           cursor: pointer;
+
+       }
+       #go{
+           border-radius: 5px;
+           height: 60px;
+           width: 24rem;
+           background-color: white;
+           cursor: pointer;
+
+       }
+       #depdate{
+        border-radius: 5px;
+           height: 60px;
+           width: 24rem;
+           background-color: white;
+           cursor: pointer;
+           
+ 
+       }
+    
+       #seche{
+           border: none;
+           border-radius: 5px;
+           color: white;
+           background-color: blue;
+          margin-top: 2rem;
+          margin-left: 30rem;
+          padding: 20px ;
+          width: 14rem;
+          cursor: pointer;
+       }
+       h4{
+           color: #3667da;
+       }
+       a{
+           text-decoration: none;
+       }
+       
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="main">
+            <div class="first">
+            <button id="a1"><a href="flights.html">Return</a></button>
+            <button id="b"><a href="onway.html">On-way</a></button>
+            <button id="c"><a href="multi.html">Multi-city</a></button>
+           </div>
+           <div class="second">
+               <h4>treveller</h4>
+               <h4>Economy</h4>
+           </div>
+        </div><br>
+        <p> Flight 1</p>
+        <div id="main2">
+            
+            <div id="lev">
+                <input type="text" id="lev" placeholder="Leaving from?" onchange="leavFun()"/> 
+              </div>
+              <div id="go">
+                  <input type="text" id="go" placeholder="Going to?" onchange="goFun()"/> 
+              </div>
+              <div id="depdate">
+                    
+                <input type="date"  id="depdate" placeholder="">
+               </div>
+       </div>
+       <p> Flight 1</p>
+
+        <div id="main3">
+          
+            <div id="lev">
+                <input type="text" id="lev" placeholder="Leaving from?" onchange="leavFun()"/> 
+              </div>
+              <div id="go">
+                  <input type="text" id="go" placeholder="Going to?" onchange="goFun()"/> 
+              </div>
+              <div id="depdate">
+                    
+                <input type="date"  id="depdate" placeholder="">
+               </div>
+        </div>
+        <button id="seche" onclick="searchFun()">Search</button>
+    </div>
+
+
+
+    <div id="medial">
+    
+    </div>
+</body>
+</html>
+<script src="flights.js"></script>
