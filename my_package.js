@@ -52,19 +52,14 @@ document.querySelector("#icon-search").addEventListener("click", searchfunc);
         if(going==""){
           
             alert("Please enter your destination city")
-            window.location.reload()
-
-           
+            window.location.reload()      
         }
-       
         // console.log(going)
         else{
             var filtercity = packageData.filter(function (elem){
                 return elem.city == going;
             })
         }
-       
-       
         console.log(filtercity)
         display(filtercity);
   }
