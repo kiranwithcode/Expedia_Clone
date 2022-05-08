@@ -8,6 +8,7 @@
     <script  src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/navbarStyles.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/search.css">
     <link rel="stylesheet" href="./styles/package.css">
 </head>
 <body>
@@ -20,7 +21,7 @@
     </div>
     <div class="logo1">
         <p class="logo-out"><i class="fa-solid fa-location-dot"></i></p>
-        <input type="text" placeholder="Going to" class="input-out"/>
+        <input type="text" placeholder="Going to" id="input-out" class="input-out" />
     </div>
     <div class="logo1">
         <p class="logo-out"><i class="fa-solid fa-user"></i></p>
@@ -61,11 +62,11 @@
                 <h3>Search by property name</h3>
                 <div class="search-input">
                   <a href="" target="_blank" hidden></a>
-                  <input type="text" placeholder="Type to search..">
+                  <input type="text" id="search-bar" placeholder="Type to search.." >
                   <div class="autocom-box">
                     <!-- here list are inserted from javascript -->
                   </div>
-                  <div class="icon"><i class="fas fa-search"></i></div>
+                  <div class="icon"><i id="icon-search" class="fas fa-search"></i></div>
                 </div>
               </div>
             <div class="hr-line" > <hr></div>
@@ -203,7 +204,62 @@
            
         </div>
 
+        
+   <div id="box5">
+    <div>
+        <p style="text-align: center; font-size: 13px;">Explore a world of travel with Expedia</p>
+        <p style="text-align: center;color: rgb(53, 53, 198); font-size: 13px;">Discover new places and experiences</p>
+    </div>
+</br>
+</br>
+    <div id="sub_box">
+        <div>
+            <img id="six_img" src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg" alt="img"/>
+
+        </div>
+        <div class="lower">
+            <p>Company</p></br>
+            <p><a href="https://www.expedia.co.in/lp/b/about" class="anc">About us</a></p></br>
+            <p><a href="https://lifeatexpediagroup.com/"class="anc">Jobs</a></p></br>
+            <p><a href="https://apps.expediapartnercentral.com/en_GB/list?utm_medium=referral&utm_source=wwwexpediacoin-en_GB&utm_campaign=SEO.B.google.com&utm_contentewd=footer-btn&siteId=27&tpid=27&eapid=0&langId=2057&utm_term=SEO.B.google.com&lasttouchMktgcode=SEO.B.google.com"class="anc">List your Property</a></p></br>
+            <p><a href="https://www.expediagroup.com/partner-with-us/default.aspx"class="anc">Properties</a></p></br></br>
+        </div>
+        <div class="lower">
+            <p>Explore</p></br>
+            <p><a href="https://www.expedia.co.in/India.dx80" class="anc">India travel guide</a></p></br>                    
+            <p><a href="https://www.expedia.co.in/Destinations-In-India.d80.Hotel-Destinations" class="anc">Hotels in India</a></p></br>
+            <p><a href="https://www.expedia.co.in/Destinations-In-India.d80.Holiday-Rental-Destinations" class="anc">Holiday rentals in India</a></p></br>
+            <p><a href="https://www.expedia.co.in/India.d80.Holidays-City-Breaks" class="anc">Holiday Packages in India</a></p></br>
+            <p><a href="https://www.expedia.co.in/Destinations-In-India.d80.Flight-Destinations"class="anc">Domestic flights</a></p></br>
+            <p><a href="https://www.expedia.co.in/Destinations-In-India.d80.Car-Hire-Destinations" class="anc">Car hire in India</a></p></br>
+            <p><a href="https://www.expedia.co.in/Accommodation"class="anc">All accommodation types</a></p></br>
+            <p><a href="https://travelblog.expedia.co.in/" class="anc">Travel blog</a></p></br>
+        </div>
+        <div class="lower">
+            <p>Terms and Policies</p></br>
+            <p><a href="https://www.expedia.co.in/lp/lg-privacypolicy" class="anc">Privacy Statement</a></p></br>
+            <p><a href="https://www.expedia.co.in/lp/lg-termsofuse" class="anc">terms of use</a></p></br>
+            <p><a href="https://www.vrbo.com/en-au/legal/traveller-terms-and-conditions" class="anc">Vrbo terms and conditions</a></p></br>
+        </div>
+        <div class="lower">
+            <p>Help</p></br>
+            <p><a href="https://www.expedia.co.in/service/"class="anc">Support</a></p></br>
+            <p><a href="https://www.expedia.co.in/service/#/articles/767/34/19798"class="anc">Change or cancel your booking</a></p></br>
+            <p><a href="https://www.expedia.co.in/service/#/articles/767/741/19795"class="anc">Refund process and timelines</a></p></br>
+            <p><a href="https://www.expedia.co.in/service/#/articles/767/34/25812"class="anc">Book a flight using an airline credit</a></p></br>
+            <p><a href="https://www.expedia.co.in/service/#/articles/767/52/19788"class="anc">International travel documents</a></p></br>
+        </div>
+    </div>
+    <hr style="width: 95%;">
+</div>
+<div id="box6">
+    <img src="https://images.trvl-media.com/media/content/expind/images/sg/secure.png" id="seventh_img"/>
+    <p style="font-size: 12px; text-align: center;margin-bottom: 40px;">© 2022 Expedia, Inc., an Expedia Group company / Expedia Asia Holdings Mauritius / BEX Travel Asia Pte. Ltd. All rights reserved. Expedia and the Airplane Logo are trademarks or registered trademarks of Expedia, Inc.</p>
+</div>
+
     
 </body>
 </html>
-<script type="module" src="my_package.js"></script>
+<script type="module" src="./my_package.js"></script>
+<script src="./js/script.js"></script>
+<script src="./js/suggestions.js"></script>

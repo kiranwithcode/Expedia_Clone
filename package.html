@@ -97,7 +97,7 @@
         </div>
         <div class="logo1">
             <p class="logo-out"><i class="fa-solid fa-location-dot"></i></p>
-            <input type="text" placeholder="Going to" class="input-out"/>
+            <input type="text" placeholder="Going to" class="input-out" id="input-out"/>
        </div>
        <div class="logo1">
            <p class="logo-out1"><i class="fa-solid fa-calendar-day"></i></p>
@@ -114,7 +114,7 @@
            <label for="chck">I only need accommodation for part of my trip </label>
        </div>
        
-       <button id="sear">Search</button>
+       <button id="sear" style="cursor: pointer;">Search</button>
     </div>
     <div id="box2">
       <img id="first_img" src="https://a.travel-assets.com/travel-assets-manager/ux-887/Global-HP-Hero-928x398.jpg" alt="img">
@@ -246,10 +246,17 @@
     import navbar from "./components/navbar.js";
     let header = document.getElementById("header");
     header.innerHTML = navbar();
-
     document.getElementById("sear").addEventListener('click', function(){
-        window.location.href = "my_package.html"
+        let inputField = document.querySelector("#input-out").value;
+
+        if(inputField==""){
+        alert("Please fill source to destination !")
+       }
+       else{
+            window.location.href = "my_package.html"
+       }   
     })
 
 
 </script>
+

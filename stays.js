@@ -1,3 +1,4 @@
+
 //hotel data 
 function hotel(u,n,r,p,c,pt)
 {
@@ -257,6 +258,57 @@ display(hotelData);
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//implementation of search
+//display(hotelData);
+// function search()
+// {
+//   //console.log("inside Search");
+// let destination = document.getElementById("search").value;
+// let inDate = document.getElementById("inDate").value;
+// let outDate = document.getElementById("outDate").value;
+// let room = document.getElementById("room").value;
+// let person = document.getElementById("person").value;
+// console.log(destination,inDate,outDate,room,person);
+// if(destination&&inDate&&outDate&&room&&person)
+// {
+//   let hotelData= JSON.parse(localStorage.getItem("hotel"))||[];
+//   let searchArray=[];
+//   let x = destination.toLowerCase();
+//  hotelData.map(function(el){
+//    if(el.city==x)
+//    {
+//      searchArray.push(el);
+//    }
+//  });
+//  ////console.log(searchArray)
+//  hotelData=[];
+//  display(searchArray);
+// }
+// else
+// {
+//   alert("please fill all the details");
+// }
+// }
+// display(hotelData);
+
+
 //implementation of search
 //display(hotelData);
 function search()
@@ -271,17 +323,93 @@ console.log(destination,inDate,outDate,room,person);
 if(destination&&inDate&&outDate&&room&&person)
 {
   let hotelData= JSON.parse(localStorage.getItem("hotel"))||[];
+  //console.log(hotelData)
   let searchArray=[];
-  let x = destination.toLowerCase();
- hotelData.map(function(el){
-   if(el.city==x)
+  let x = destination.toLowerCase().trim();
+ hotelData.filter(function(el,i,arr){
+  let t=(el.city).trim();
+  let u=x.trim();
+  //console.log(x==t);
+   if(x===t)
    {
      searchArray.push(el);
+     //console.log(el);
    }
  });
- ////console.log(searchArray)
- hotelData=[];
- display(searchArray);
+ console.log(searchArray)
+ //hotelData=[];
+ //display(searchArray);
+
+
+
+
+
+
+
+ document.querySelector("#hotel").innerHTML=""
+
+searchArray.map(function(el,i,arr){
+     let box1=document.createElement("div");
+     let image = document.createElement("img");
+     image.src=el.url;
+
+
+
+
+    //  This is the logic for make our image responsive
+     box1.addEventListener("click",myFunction);
+     function myFunction()
+     {
+     addToCart(el);
+     window.open('staysIndividual.html','_blank');
+     }
+
+
+
+
+
+
+
+     image.setAttribute("class","image");
+
+     let box2=document.createElement("div");
+     let name = document.createElement("h3");
+     name.innerText=el.name;
+     let rating = document.createElement("h3");
+     rating.innerText = el.rating;
+     let price1 = document.createElement("h3");
+     price1.innerText = "₹"+el.price;
+    //  let left=document.createElement("p");
+    //  left.innerText="We have 7 left at";
+    //  left.setAttribute("class","left")
+
+     let city = document.createElement("h3");
+     city.innerText = el.city;
+     price1.style.marginLeft = "100px";
+     price1.style.marginTop = "120px";
+     let ref=document.createElement("p");
+     ref.innerText="Fully refundable";
+     let rese=document.createElement("p");
+     rese.innerText="Reserve now, pay later";
+     let rati=document.createElement("p");
+     rati.innerText="4/5 Excellent(402 reviews)"
+     price1.setAttribute("class","price1")
+     //console.log(price1)
+     box2.setAttribute("class","box2")
+     let box4=document.createElement("div");
+     box4.append(ref,rese,rati)
+
+     let box5=document.createElement("div");
+     box5.append(rating,city)
+     box5.setAttribute("class","box5")
+     box4.setAttribute("class","box4")
+     box2.append(name,box5,box4);
+     box1.setAttribute("class","box1");
+
+     box1.append(image,box2,price1);
+     document.getElementById("hotel").append(box1);
+
+});
 }
 else
 {
@@ -289,6 +417,14 @@ else
 }
 }
 display(hotelData);
+
+
+
+
+
+
+
+
 
 
 //sort by price using checkbox
@@ -331,7 +467,7 @@ function searchByProperty()
   //console.log(searchValue);
   let hotelData= JSON.parse(localStorage.getItem("hotel"))||[];
   let x = searchValue.toLowerCase();
-  //console.log(x);
+  console.log(x);
   let searchArray=[];
   hotelData.map(function(el){
     if(el.proprtyType == x)
