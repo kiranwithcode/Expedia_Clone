@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/navbarStyles.css">
+    <style>
+
+
+        #containers{
+            border: 1px solid #c5c7ce;
+            height: 300px;
+            width: 90%;
+            margin: auto;
+        }
+        #main{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        #main div{
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            cursor: pointer;
+        }
+        #a1{
+            margin-top: 10px;
+            padding: 10px;
+            height: 80%;
+            width: 170%;
+            border: none;
+            background-color: white;
+            cursor: pointer;
+            
+        }
+        
+        #b{
+            margin-left: 5rem;
+            margin-top: 10px;
+            padding: 10px;
+            height: 80%;
+            width: 170%;
+            border: none;
+            background-color: white;
+            cursor: pointer;
+
+        }
+        #c{
+            margin-left: 4rem;
+            margin-top: 10px;
+            padding: 10px;
+            height: 80%;
+            width: 170%;
+            border: none;
+            background-color: white;
+            cursor: pointer;
+        }
+        #a1:hover{
+            color: #3667da;
+           border-radius: 5px;
+           height: 80%;
+           width: 170%;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        }
+        #b:hover{
+            color: #3667da;
+            border-radius: 5px;
+            height: 80%;
+            width: 170%;
+            display: inline;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        }
+        #c:hover{
+            color: #3667da;
+            border-radius: 5px;
+            height: 80%;
+            width: 170%;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        }
+        #main2{
+            /* border: 1px solid black; */
+            padding-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+
+        }
+       #lev{
+           border-radius: 5px;
+           height: 60px;
+           width: 23rem;
+           background-color: white;
+           cursor: pointer;
+          
+       }
+       #go{
+           border-radius: 5px;
+           height: 60px;
+           width: 23rem;
+           background-color: white;
+           cursor: pointer;
+
+       }
+       #depdate{
+        border-radius: 5px;
+           height: 60px;
+           width: 12rem;
+           background-color: white;
+           cursor: pointer;
+ 
+       }
+       #retdate{
+        border-radius: 5px;
+           height: 60px;
+           width: 12rem;
+           background-color: white;
+           cursor: pointer;
+   
+       }
+       #seche{
+           border: none;
+           border-radius: 5px;
+           color: white;
+           background-color: blue;
+          margin-top: 2rem;
+          margin-left: 30rem;
+          padding: 20px ;
+          width: 14rem;
+          cursor: pointer;
+       }
+       h4{
+           color: #3667da;
+       }
+       a{
+           text-decoration: none;
+           color: black;
+       }
+       /* #container  {
+           display: grid;
+           grid-template-rows: auto;
+           grid-template-columns: auto;
+           gap: 10px;
+           margin: auto;
+           
+       } */
+      .mainbox{
+          display: flex;
+          justify-content: space-between;
+         margin-top: 20px;
+          width: 70%;
+          margin: auto;
+          box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+          margin-bottom: 10px;
+      }
+      .mainbox > div{
+          margin-left: 10px;
+          margin-right: 10px;
+         
+          
+      }
+      .flyimge{
+          display: flex;
+          margin-left: 10px;
+
+      }
+      .flyimge > img{
+          width: 40px;
+          height: 40px;
+      }
+      .mainbox >div>div{
+          align-items: center;
+      }
+
+    </style>
+</head>
+<body>
+   <div id="header"></div>
+    <div id="containers">
+        <div id="main">
+            <div class="first">
+            <button id="a1"><a href="flights.html">Return</a></button>
+            <button id="b"><a href="onway.html">On-way</a></button>
+            <button id="c"><a href="multi.html">Multi-city</a></button>
+           </div>
+           <div class="second">
+               <h4>treveller</h4>
+               <h4>Economy</h4>
+           </div>
+        </div><br>
+        <div id="main2">
+           
+             <div id="lev1">
+              <input type="text" id="lev" placeholder="Leaving from?"/> 
+              
+            </div>
+            <div id="go1">
+                <input type="text" id="go" placeholder="Going to?"/> 
+                
+            </div>
+          <div id="depdate">     
+                <input  type="date" id="depdate" placeholder="12-9-2021">
+               </div>
+               <div id="retdate">
+                    
+                <input  type="date" id="retdate" placeholder="18-8-2022">
+               </div>
+        </div>
+        <button id="seche">Search</button>
+    </div>
+    <a href="pay.html"><div id="container"></div></a>
+    
+
+
+   
+</body>
+</html>
+
+<script type="module" src="flights.js"></script>

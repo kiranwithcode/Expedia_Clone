@@ -99,7 +99,7 @@
         </div>
         <div class="logo1">
             <p class="logo-out"><i class="fa-solid fa-location-dot"></i></p>
-            <input type="text" placeholder="Going to" class="input-out"/>
+            <input type="text" placeholder="Going to" class="input-out" id="input-out"/>
        </div>
        <div class="logo1">
            <p class="logo-out1"><i class="fa-solid fa-calendar-day"></i></p>
@@ -243,4 +243,13 @@
     import navbar from "./components/navbar.js";
     let header = document.getElementById("header");
     header.innerHTML = navbar();
+
+    document.getElementById("sear").addEventListener("click", function(){
+        let valu = document.querySelector("#input-out").value;
+        if(valu === ""){
+            alert("All field are required ")
+        }else{
+            window.location.href = "flights.html";
+        }
+    })
 </script>

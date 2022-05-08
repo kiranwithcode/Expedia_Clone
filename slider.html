@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+.sidenav {
+  display: none;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color:white;
+  overflow-x: hidden;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 100px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.eco{
+    border: 1px solid burlywood;
+    width: 100%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <h1>Delhi to Patna</h1>
+    <p>SpiceJet • Sat, 21 May</p>
+    <p>06:25 - 7:30</p>
+    <p>1h 5m (1 stop)</p>
+    <p>Show details</p>
+    <hr>
+    <p>Selected fare to Patna</p>
+    <div class="eco"> 
+    <h2>Rs12,112</h2>
+    <p>Rs12,112.00 return for 1 traveller</p>
+    <p>Cabin: Economy</p>
+    <button>Select</button>
+    </div>
+    <p>Confirm bag fees and restrictions with the airline.</p>
+</div>
+
+
+
+<!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span> -->
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.display = "none";
+}
+</script>
+   
+</body>
+</html> 
