@@ -90,32 +90,32 @@
         <div id="box1">
         <div class="logo1">
             <p class="logo-out"><i class="fa-solid fa-location-dot"></i></p>
-            <input type="text" placeholder="Pick-up" class="input-out"/>
+            <input id="pick" type="text" placeholder="Pick-up" class="input-out"/>
         </div>
         <div class="logo1">
             <p class="logo-out"><i class="fa-solid fa-location-dot"></i></p>
-            <input type="text" placeholder="Same as pick up" class="input-out"/>
+            <input id="same_s" type="text" placeholder="Same as pick up" class="input-out"/>
        </div>
        </div>
         <div id="p2">
         <div class="logo1">
         <p class="logo-out1"><i class="fa-solid fa-calendar-day"></i></p>
-        <input type="date" placeholder="check in" class="input-out3"/>
+        <input type="date" id="date1" placeholder="check in" class="input-out3"/>
         </div>
         <div class="logo1">
         <p class="logo-out1"><i class="fa-solid fa-calendar-day"></i></p>
-       <input type="date" placeholder="check out" class="input-out3"/>
+       <input type="date" id="date2" placeholder="check out" class="input-out3"/>
         </div>
         <div class="logo1">
         <p class="logo-out1"><i class="fa-solid fa-clock"></i></p>
-         <input type="time" placeholder="Pick-up time" class="input-out3"/>
+         <input type="time" id="time1" placeholder="Pick-up time" class="input-out3"/>
         </div>
          <div class="logo1">
          <p class="logo-out1"><i class="fa-solid fa-clock"></i></p>
-        <input type="time" placeholder="Drop-off time" class="input-out3"/>
+        <input type="time" id="time2" placeholder="Drop-off time" class="input-out3"/>
           </div>
     </div>
-                <button id="sear1">Search</button>
+                <button  id="sear1">Search</button>
     </div> 
               
     </div>
@@ -249,4 +249,28 @@
     import navbar from "./components/navbar.js";
     let header = document.getElementById("header");
     header.innerHTML = navbar();
+
+
+  document.getElementById("sear1").addEventListener("click", myfunction);
+
+  function myfunction(){
+      window.location.href = "my_car.html";
+  }
+    //  let arr = [];
+
+    //  function Search(p,s,d1,d2,t1,t2){
+    //      this.pick =p,
+    //      this.same_s =s,
+    //      this.date1 = d1,
+    //      this.date2 = d2,
+    //      this.time1 = t1,
+    //      this.time2 = t2
+         
+    //  }
+
+    //  function SearchPlace(){
+    //  e.preventDefault();
+
+    //  }
+
 </script>
