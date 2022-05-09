@@ -43,11 +43,11 @@
          </div>
          <div class="logo1">
             <p class="logo-out1"><i class="fa-solid fa-calendar-day"></i></p>
-            <input type="date" placeholder="check in" class="input-out1"/>
+            <input type="date" placeholder="check in" class="input-out1" id="from"/>
         </div>
         <div class="logo1">
             <p class="logo-out1"><i class="fa-solid fa-calendar-day"></i></p>
-            <input type="date" placeholder="check out" class="input-out1"/>
+            <input type="date" placeholder="check out" class="input-out1" id="to"/>
         </div>
         </div>
         <button id="search1">Search</button>
@@ -196,7 +196,16 @@
           else{
               alert("  Sorry,This city is not available ")
           }
+
+
+
+          let date=document.querySelector("#from").value
+          let date2=document.querySelector("#to").value
+          localStorage.setItem("from",date)
+          localStorage.setItem("to",date2)
        }
+
+
 
 
 </script>
