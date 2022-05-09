@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous">
     </script>
-
-    <title>Document</title>
+<link rel="icon"
+href="https://yt3.ggpht.com/ytc/AKedOLR5Y-hChGH3WyXU_LtXt24yqEXn-lbZf4PVrjvhDR4=s900-c-k-c0x00ffffff-no-rj"
+type="image/x-icon">
+<title>Things to do</title>
 </head>
 <style>
 nav{
@@ -592,7 +594,7 @@ multi.innerText="S$"+details.price+ " "+"x"+" "+" 1 adult"
 
 let tot=document.getElementById("tot")
 tot.innerText="S$"+(details.price *1)
-
+localStorage.setItem("amount",tot.innerHTML)
 function number(){
     let num= document.getElementById("num").value
 //   localStorage.setItem("person",num)
