@@ -1,3 +1,4 @@
+
 #box{
     height: 350px;
     width: 80%;
@@ -5,6 +6,11 @@
     border: 1px solid rgb(180, 177, 177);
     margin-top: 50px;
     border-radius: 10px;
+ 
+
+}
+#header nav{
+    width: 100%;    
 }
 #box_navbar{
     height: 20%;
@@ -251,4 +257,14 @@
        margin-left: 40%;
        border: none;
        font-size: 17px;
+   }
+
+   @media screen and (max-width: 720px){
+        #header .items, #travel{
+            display: none;
+            background-color: white;
+        }
+        #header nav{
+            height: 80px;
+        }
    }
