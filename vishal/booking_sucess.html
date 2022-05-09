@@ -51,8 +51,10 @@
         <h1>Booking Confirm!!!</h1>
 
         <h2 id="name"></h2>
-        <h3>Date : 09 May 2022</h3>
-        <!-- <h2>Amount : Rs 11,036.11</h2> -->
+        <h3 id="from"></h3>
+        <h3 id="to"></h3>
+        <h3> Successfully Paid Pmount</h3>
+        <h2 id="amount"></h2>
        
       </div>
       <button class="btn" onclick="goHome()">Go to Home</button>
@@ -71,9 +73,16 @@
       window.location.href="../thingsToDo.html"
     }
 
+let from= localStorage.getItem("from")
+let to =localStorage.getItem("to")
+console.log(from,to)
 
+let x=document.querySelector("#from")
+x.innerText= "From Date:"+" "+from
+let y=document.getElementById("to")
+y.innerText="To Date:"+" "+to
 
-
-
-
+let amount =localStorage.getItem("amount")
+let z=document.getElementById("amount")
+z.innerText=amount+".00";
 </script>

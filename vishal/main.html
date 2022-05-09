@@ -600,6 +600,7 @@ function number(){
     multi.innerText="S$"+details.price+ " "+"x"+" "+num+" "+"adult"
     tot.innerText="S$"+(details.price *num)
     tpo.innerText=tot.innerHTML
+    localStorage.setItem("amount",tot.innerHTML)
 }
 
 let tp=document.getElementById("tp")
