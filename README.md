@@ -11,7 +11,7 @@ Expedia is one of the fastest growing online travel portals in Asia, offering tr
 
 ## Deployment
 To deploy this project run
-https://kiranwithcode.github.io/Expedia_Clone/
+https://jolly-tulumba-a0bccf.netlify.app/
 
 About this project: This is a team project, built by us in the Construct Week - Unit 3 at Masai School.
 
