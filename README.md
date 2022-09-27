@@ -4,7 +4,7 @@ Unit-3 Construct Week Project
 ## About
 This is a clone of Expedia.com travel portals
 we have implemented all functionality of this website such 
-as Login/Signup,Book Hotel,Car,Flights etc.
+as Login/Signup,Book Hotel,Car,Flights etc. We used HTML, Css, JavaScript in this project and some other libraries like Bootstrap.
 
 ### Description
 Expedia is one of the fastest growing online travel portals in Asia, offering travellers an extensive selection of hotels, activities and travel services to meet every budget and activities of every kind at competitive rates. With over hundreds of thousands of hotel partners worldwide and a comprehensive offering of flight inventory made available on the website, travellers can book everything they need for a holiday - rooms to meet every budget, activities of every kind and travel services to complement.
