@@ -2,6 +2,8 @@
 Unit-3 Construct Week Project
 
 ## About
+About this project: This is a team project, built by us in the Construct Week - Unit 3 at Masai School.
+
 This is a clone of Expedia.com travel portals
 we have implemented all functionality of this website such 
 as Login/Signup,Book Hotel,Car,Flights etc. We used HTML, Css, JavaScript in this project and some other libraries like Bootstrap.
@@ -13,7 +15,6 @@ Expedia is one of the fastest growing online travel portals in Asia, offering tr
 To deploy this project run
 https://jolly-tulumba-a0bccf.netlify.app/
 
-About this project: This is a team project, built by us in the Construct Week - Unit 3 at Masai School.
 
 ## Team Members
 •	PALLAVI JAGTAP 
